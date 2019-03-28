@@ -1,4 +1,4 @@
-#include "..\include\Slider.h"
+#include "Slider.h"
 
 bool Slider::isOver(sf::Vector2f p_MousePos)
 {
