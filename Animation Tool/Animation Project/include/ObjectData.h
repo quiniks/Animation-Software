@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-//#include "QuadPart.h"
 
+//! Struct that holds object data i.e. position, rotation and vertices
 class ObjectData {
 public:
 	float m_Rotation;

@@ -4,17 +4,18 @@
 
 using namespace boost::container;
 
+//! Struct that holds adjacent keyframe data
 struct AdjKeyFrameData {
 	int Next;
 	int Prev;
 	bool Visible;
 };
-
+//! Struct that holds frame number and its corresponding object data
 struct KeyFrame {
 	unsigned int m_Frame;
 	ObjectData m_ObjectData;
 };
-
+//! Comparator that orders frames via a the frame number
 struct CompareFrame
 {
 	using is_transparent = void;
@@ -31,13 +32,12 @@ struct CompareFrame
 		return p_ShapeKeyFrames.m_Frame < p_Frame;
 	}
 };
-
+//! Struct that holds the ID and corresponding keyframes
 struct ShapeKeyFrames {
 	unsigned int m_ID;
-	//std::vector<KeyFrame> m_KeyFrames;
 	flat_set<KeyFrame, CompareFrame> m_KeyFrames2;
 };
-
+//! Comparator that orders ShapeKeyFrames by their ID
 struct CompareId
 {
 	using is_transparent = void;
