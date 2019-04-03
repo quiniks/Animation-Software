@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_shapes">
+<title>Shapes class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_shapes_8h">&lt;Shapes.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; unsigned int, Object &gt; m_Shapes<para><emphasis>Map of IDs and objects.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; unsigned int &gt; OnCreated<para><emphasis>Signal for creation of shapes.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int <link linkend="class_shapes_1a2e8bd895be475f9e5169cb2669444218">FindEmptyID</link> (
+std::vector&lt; unsigned int &gt; p_InUseIDs)<para><emphasis>method for determining that smallest unused ID number</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::pair&lt; unsigned int, <link linkend="class_object">Object</link> * &gt; <link linkend="class_shapes_1a507aab492a4840275d9cc6dea090d880">NewShape</link> (
+<link linkend="class_object">Object</link> p_NewObject)<para><emphasis>Adds a copy of a shape to the shape map and returns its ID and pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_object">Object</link> &amp; <link linkend="class_shapes_1a95aba282963cca12a01ee17066af9297">FindShape</link> (
+unsigned int p_ID)<para><emphasis>Locates and returns a reference to a shape with ID.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="class_object">Object</link> * &gt; <link linkend="class_shapes_1a8651d6e746556b68623156dcce5202bc">GetObjects</link> (
+)<para><emphasis>Returns a vector with pointers to all the current objects in the map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; unsigned int, <link linkend="class_object_data">ObjectData</link> &gt; <link linkend="class_shapes_1ab1d661641f51d136fd840367562580ef">GetIDAndDatas</link> (
+)<para><emphasis>Returns a map containing all the IDs and object data of shapes currently in the shapes map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; unsigned int, <link linkend="class_object">Object</link> * &gt; <link linkend="class_shapes_1a0de59bfbb215384f9027301817bcd4a1">GetIDAndObjects</link> (
+)<para><emphasis>Returns a map of IDs and object pointers.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_shapes_1a7dbae8132686e181679f4a543b0dc128">DeleteShape</link> (
+unsigned int p_ID)<para><emphasis>Deletes an object with associated ID.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int <link linkend="class_shapes_1a4cb9b0b2e974c63e3182103626b582a4">GetSize</link> (
+)<para><emphasis>returns the size of the shapes&apos; map</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_shapes_1aab0b2aa58534e707e13f8651f5a6e55d">UpdateShapes</link> (
+)<para><emphasis>calls all the shapes update methods</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_shapes_1a5d0ed4de4f10f3a81f2eff482550c448">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draws the shapes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>container class that handles the creation and getting of objects via IDs </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_shapes_1a2e8bd895be475f9e5169cb2669444218">
+                <title>unsigned int Shapes::FindEmptyID (std::vector&lt; unsigned int &gt; p_InUseIDs)</title> <emphasis>method for determining that smallest unused ID number</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a507aab492a4840275d9cc6dea090d880">
+                <title>std::pair&lt; unsigned int, Object * &gt; Shapes::NewShape (Object p_NewObject)</title> <emphasis>Adds a copy of a shape to the shape map and returns its ID and pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a95aba282963cca12a01ee17066af9297">
+                <title>Object &amp; Shapes::FindShape (unsigned int p_ID)</title> <emphasis>Locates and returns a reference to a shape with ID.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a8651d6e746556b68623156dcce5202bc">
+                <title>std::vector&lt; Object * &gt; Shapes::GetObjects ()</title> <emphasis>Returns a vector with pointers to all the current objects in the map.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1ab1d661641f51d136fd840367562580ef">
+                <title>std::map&lt; unsigned int, ObjectData &gt; Shapes::GetIDAndDatas ()</title> <emphasis>Returns a map containing all the IDs and object data of shapes currently in the shapes map.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a0de59bfbb215384f9027301817bcd4a1">
+                <title>std::map&lt; unsigned int, Object * &gt; Shapes::GetIDAndObjects ()</title> <emphasis>Returns a map of IDs and object pointers.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a7dbae8132686e181679f4a543b0dc128">
+                <title>void Shapes::DeleteShape (unsigned int p_ID)</title> <emphasis>Deletes an object with associated ID.</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a4cb9b0b2e974c63e3182103626b582a4">
+                <title>unsigned int Shapes::GetSize ()</title> <emphasis>returns the size of the shapes&apos; map</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1aab0b2aa58534e707e13f8651f5a6e55d">
+                <title>void Shapes::UpdateShapes ()</title> <emphasis>calls all the shapes update methods</emphasis>
+                
+            </section>
+            <section xml:id="class_shapes_1a5d0ed4de4f10f3a81f2eff482550c448">
+                <title>void Shapes::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draws the shapes.</emphasis>
+                
+            </section>
+</section>

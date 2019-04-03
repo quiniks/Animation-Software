@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_colour_panel">
+<title>ColourPanel class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_colour_panel_8h">&lt;ColourPanel.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_Frame<para><emphasis>The UI frame.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MousePos<para><emphasis>The mouse position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Slider m_SliderRed<para><emphasis>The slider for red.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Slider m_SliderBlue<para><emphasis>The slider for blue.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Slider m_SliderGreen<para><emphasis>The slider for green.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Color m_Colour<para><emphasis>The colour.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_colour_panel_1a5dc33d83d0aafa0c936c3989e6f11e39">ColourPanel</link> (
+sf::Vector2f p_Pos)<para><emphasis>Constructor that takes the position for the panel.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Color <link linkend="class_colour_panel_1ad7a1677b7e21b6d1c3667358040f4719">getColour</link> (
+)<para><emphasis>Colour getter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_panel_1ac9299d66643be6579c3541724c88d2de">Update</link> (
+float p_DeltaTime)<para><emphasis>Update method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_panel_1a6f76355771589d3c8240d69777f76530">HandleMouseInput</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>Callback for handling mouse button events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_panel_1af8a216658cd97964e268626ef469dc15">HandleMouseMove</link> (
+sf::Vector2i p_Position)<para><emphasis>Callback for handling mouse move events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_panel_1a9a763ee1e08cee05d93e95a7c0e87ca5">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw method for drawing the panel.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Provides a very simple UI for selecting a colour. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_colour_panel_1a5dc33d83d0aafa0c936c3989e6f11e39">
+                <title>ColourPanel::ColourPanel (sf::Vector2f p_Pos)</title> <emphasis>Constructor that takes the position for the panel.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_panel_1ad7a1677b7e21b6d1c3667358040f4719">
+                <title>sf::Color ColourPanel::getColour ()</title> <emphasis>Colour getter.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_panel_1ac9299d66643be6579c3541724c88d2de">
+                <title>void ColourPanel::Update (float p_DeltaTime)</title> <emphasis>Update method.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_panel_1a6f76355771589d3c8240d69777f76530">
+                <title>void ColourPanel::HandleMouseInput (sf::Mouse::Button p_Button, bool p_bState)</title> <emphasis>Callback for handling mouse button events.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_panel_1af8a216658cd97964e268626ef469dc15">
+                <title>void ColourPanel::HandleMouseMove (sf::Vector2i p_Position)</title> <emphasis>Callback for handling mouse move events.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_panel_1a9a763ee1e08cee05d93e95a7c0e87ca5">
+                <title>void ColourPanel::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw method for drawing the panel.</emphasis>
+                
+            </section>
+</section>

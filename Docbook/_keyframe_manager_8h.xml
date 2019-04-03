@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_keyframe_manager_8h">
+    <title>KeyframeManager.h File Reference</title>
+    <programlisting>#include &quot;Enums.h&quot;</programlisting>
+    <programlisting>#include &lt;chrono&gt;</programlisting>
+    <programlisting>#include &quot;EventHandler.h&quot;</programlisting>
+    <programlisting>#include &quot;Button.h&quot;</programlisting>
+    <programlisting>#include &quot;Shapes.h&quot;</programlisting>
+    <programlisting>#include &quot;InterpolationHelper.h&quot;</programlisting>
+    <programlisting>#include &quot;AnimStructs.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_keyframe_manager">KeyframeManager</link></para>
+<para><emphasis>Manages keyframe data for objects
+Provides functionality to save, load, iterate and interpolate between keyframes.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/KeyframeManager.h</para>
+    </simplesect>
+</section>

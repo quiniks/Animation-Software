@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_ellipse_shape">
+<title>EllipseShape class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_ellipse_shape_8h">&lt;EllipseShape.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_radius<para><emphasis>Radius in x and y.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_uiPointCount<para><emphasis>Point count determines how smooth the ellipse is.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_ellipse_shape_1a095a9119b9c505cfddd2d7a908aaa2fa">EllipseShape</link> (
+const sf::Vector2f &amp; radius, unsigned int p_uiPointCount)<para><emphasis>constructor sets up the initial variables i.e. radius and point count</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_ellipse_shape_1a7985921507ea04620ea7e2affb1871ec">setRadius</link> (
+const sf::Vector2f &amp; radius)<para><emphasis>Radius setter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const sf::Vector2f &amp; <link linkend="class_ellipse_shape_1a539f2728e967a2111e41e157467764c4">getRadius</link> (
+)<para><emphasis>Radius getter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual unsigned int <link linkend="class_ellipse_shape_1ad9afe1dc2ce0e24a2af6bec2999aeb6b">getPointCount</link> (
+)<para><emphasis>Point count getter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual sf::Vector2f <link linkend="class_ellipse_shape_1ab922b1ae42b7896b7d01d8d8d4759d65">getPoint</link> (
+unsigned int index)<para><emphasis>Returns point with specified index.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Custom SFML shape class since sf::Circle cannont be scaled along the x and y axis individually. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_ellipse_shape_1a095a9119b9c505cfddd2d7a908aaa2fa">
+                <title>EllipseShape::EllipseShape (const sf::Vector2f &amp;radius=sf::Vector2f(0, 0), unsigned int p_uiPointCount=50)</title> <emphasis>constructor sets up the initial variables i.e. radius and point count</emphasis>
+                
+            </section>
+            <section xml:id="class_ellipse_shape_1a7985921507ea04620ea7e2affb1871ec">
+                <title>void EllipseShape::setRadius (const sf::Vector2f &amp;radius)</title> <emphasis>Radius setter.</emphasis>
+                
+            </section>
+            <section xml:id="class_ellipse_shape_1a539f2728e967a2111e41e157467764c4">
+                <title>const sf::Vector2f&amp; EllipseShape::getRadius () const</title> <emphasis>Radius getter.</emphasis>
+                
+            </section>
+            <section xml:id="class_ellipse_shape_1ad9afe1dc2ce0e24a2af6bec2999aeb6b">
+                <title>virtual unsigned int EllipseShape::getPointCount () const</title> <emphasis>Point count getter.</emphasis>
+                
+            </section>
+            <section xml:id="class_ellipse_shape_1ab922b1ae42b7896b7d01d8d8d4759d65">
+                <title>virtual sf::Vector2f EllipseShape::getPoint (unsigned int index) const</title> <emphasis>Returns point with specified index.</emphasis>
+                
+            </section>
+</section>

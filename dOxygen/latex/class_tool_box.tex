@@ -1,0 +1,59 @@
+\hypertarget{class_tool_box}{}\section{Tool\+Box Class Reference}
+\label{class_tool_box}\index{Tool\+Box@{Tool\+Box}}
+
+
+Handles the creation and switching of tools.  
+
+
+
+
+{\ttfamily \#include $<$Tool\+Box.\+h$>$}
+
+Inheritance diagram for Tool\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tool_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tool_box_a475f7f91136ff1b2bf6560d59ffe5030}\label{class_tool_box_a475f7f91136ff1b2bf6560d59ffe5030}} 
+\hyperlink{class_tool_box_a475f7f91136ff1b2bf6560d59ffe5030}{Tool\+Box} (\hyperlink{struct_interaction_ptrs}{Interaction\+Ptrs} $\ast$p\+\_\+p\+SP)
+\begin{DoxyCompactList}\small\item\em Constructor that takes \char`\"{}iteraction\+Ptrs\char`\"{} which contains most of the useful classes that tools need to interact with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_ac2512eeee3fb8915bb20eaa07f30bca0}\label{class_tool_box_ac2512eeee3fb8915bb20eaa07f30bca0}} 
+void \hyperlink{class_tool_box_ac2512eeee3fb8915bb20eaa07f30bca0}{Update} (float p\+\_\+\+Delta\+Time)
+\begin{DoxyCompactList}\small\item\em Update function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_ac3414410d0d14deb45099e75b17a9fe4}\label{class_tool_box_ac3414410d0d14deb45099e75b17a9fe4}} 
+void \hyperlink{class_tool_box_ac3414410d0d14deb45099e75b17a9fe4}{On\+Mouse\+Click} (sf\+::\+Mouse\+::\+Button p\+\_\+\+Button, bool p\+\_\+\+State)
+\begin{DoxyCompactList}\small\item\em On\+Mouse\+Click callback function, registered to the input handlers mouse click signal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a08a321df9ac5a75abbd1a300d28ff117}\label{class_tool_box_a08a321df9ac5a75abbd1a300d28ff117}} 
+void \hyperlink{class_tool_box_a08a321df9ac5a75abbd1a300d28ff117}{On\+Mouse\+Move} (sf\+::\+Vector2i p\+\_\+\+Window\+Pos, sf\+::\+Vector2f p\+\_\+\+World\+Pos)
+\begin{DoxyCompactList}\small\item\em On\+Mouse\+Move callback function, registered to the input handlers mouse move extra signal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a69078e5a71a14b9103f981762b5d7860}\label{class_tool_box_a69078e5a71a14b9103f981762b5d7860}} 
+void \hyperlink{class_tool_box_a69078e5a71a14b9103f981762b5d7860}{Set\+Active} (bool p\+\_\+b\+Active)
+\begin{DoxyCompactList}\small\item\em Set the active state of the current tool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a5d8f199ab6a81fd41e6f6052d87b170d}\label{class_tool_box_a5d8f199ab6a81fd41e6f6052d87b170d}} 
+void \hyperlink{class_tool_box_a5d8f199ab6a81fd41e6f6052d87b170d}{Select\+Draw} ()
+\begin{DoxyCompactList}\small\item\em Set the draw tool as the currently selected tool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a441285f2023171e76dec4241cdd51b0b}\label{class_tool_box_a441285f2023171e76dec4241cdd51b0b}} 
+void \hyperlink{class_tool_box_a441285f2023171e76dec4241cdd51b0b}{Select\+Transform} ()
+\begin{DoxyCompactList}\small\item\em Set the transform tool as the currently selected tool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a32473bb26bb4c4a7f98866cf8b435c4e}\label{class_tool_box_a32473bb26bb4c4a7f98866cf8b435c4e}} 
+void \hyperlink{class_tool_box_a32473bb26bb4c4a7f98866cf8b435c4e}{Select\+Colour} ()
+\begin{DoxyCompactList}\small\item\em Set the colour tool as the currently selected tool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a07c9c626ce1c9002084303a5b6cd3e27}\label{class_tool_box_a07c9c626ce1c9002084303a5b6cd3e27}} 
+void \hyperlink{class_tool_box_a07c9c626ce1c9002084303a5b6cd3e27}{Select\+Joint} ()
+\begin{DoxyCompactList}\small\item\em Set the joint tool as the currently selected tool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_box_a95b5c8ae8056d48eec3ea16bac91af62}\label{class_tool_box_a95b5c8ae8056d48eec3ea16bac91af62}} 
+void \hyperlink{class_tool_box_a95b5c8ae8056d48eec3ea16bac91af62}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw anything that the currently selected tool needs drawing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handles the creation and switching of tools. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Tool\+Box.\+h\end{DoxyCompactItemize}

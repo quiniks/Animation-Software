@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_event_handler">
+<title>EventHandler class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_event_handler_8h">&lt;EventHandler.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, std::any &gt; m_EventMap2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_event_handler_1a175f18f852b466f845ed9f2b011f2295">EventHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_event_handler_1a08c12344c83fd59f4e92e5892b7b139d">~EventHandler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="class_event_handler">EventHandler</link> &amp; <link linkend="class_event_handler_1ace8f196c90d62a0c22a07845fc6e8ff0">Instance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_event_handler_1a5d7ff24c664f9d1c00a417e9716471cc">EventHandler</link> (
+<link linkend="class_event_handler">EventHandler</link> const &amp; )<para><emphasis>Copy operator.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_event_handler">EventHandler</link> &amp; <link linkend="class_event_handler_1acf2df364aed9018b3f1b6c30f2e37654">operator=</link> (
+<link linkend="class_event_handler">EventHandler</link> const &amp; )<para><emphasis>Assignment operator.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_event_handler_1a6835697a012c284ca8ca9c32f26b8463">Register2</link> (
+std::string p_SignalName, <link linkend="class_signal">Signal</link>&lt; Args... &gt; * p_Signal)<para><emphasis>Template function that can take any type of signal pointer and inserts it in the map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_event_handler_1a53fc1f2852e49aedb4cfe766bbc80b6f">Connect2</link> (
+std::string p_SignalName, std::function&lt; void(Args...)&gt; const &amp; p_Listener)<para><emphasis>Template function that can take any type of function pointer and connects it to a signal with an associated name.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_event_handler_1a76ee03c87cfebc9f2bdb4d15a1d3d3b6">Disconnect</link> (
+std::string p_SignalName, unsigned int p_ID)<para><emphasis>Disconnect function that disconnects a callback function with ID, p_ID, from a specified signal.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the connecting and registering of signals. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>std::map&lt;std::string, std::any&gt; EventHandler::m_EventMap2</title>                
+<para>Map used to hold pointers to signals Since signals are template classes std::any is used to store them </para>
+
+                <para>Definition at line 18 of file EventHandler.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>EventHandler.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <section xml:id="class_event_handler_1a175f18f852b466f845ed9f2b011f2295">
+                <title>EventHandler::EventHandler ()=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1a08c12344c83fd59f4e92e5892b7b139d">
+                <title>EventHandler::~EventHandler ()=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1ace8f196c90d62a0c22a07845fc6e8ff0">
+                <title>static EventHandler&amp; EventHandler::Instance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1a5d7ff24c664f9d1c00a417e9716471cc">
+                <title>EventHandler::EventHandler (EventHandler const &amp;)=delete</title> <emphasis>Copy operator.</emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1acf2df364aed9018b3f1b6c30f2e37654">
+                <title>EventHandler&amp; EventHandler::operator= (EventHandler const &amp;)=delete</title> <emphasis>Assignment operator.</emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1a6835697a012c284ca8ca9c32f26b8463">
+                <title>void EventHandler::Register2 (std::string p_SignalName, Signal&lt; Args... &gt; *p_Signal)</title> <emphasis>Template function that can take any type of signal pointer and inserts it in the map.</emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1a53fc1f2852e49aedb4cfe766bbc80b6f">
+                <title>int EventHandler::Connect2 (std::string p_SignalName, std::function&lt; void(Args...)&gt; const &amp;p_Listener)</title> <emphasis>Template function that can take any type of function pointer and connects it to a signal with an associated name.</emphasis>
+                
+            </section>
+            <section xml:id="class_event_handler_1a76ee03c87cfebc9f2bdb4d15a1d3d3b6">
+                <title>void EventHandler::Disconnect (std::string p_SignalName, unsigned int p_ID)</title> <emphasis>Disconnect function that disconnects a callback function with ID, p_ID, from a specified signal.</emphasis>
+                
+            </section>
+</section>

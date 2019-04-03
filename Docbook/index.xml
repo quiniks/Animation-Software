@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>2D Animation Software</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespaceboost_1_1container.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_q.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="struct_adj_key_frame_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_button.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_camera.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_canvas.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_colour_panel.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_colour_tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_compare_frame.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_compare_id.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classsf_1_1_drawable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_ellipse_shape.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_event_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_frame_slot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_has_interaction_ptrs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_interaction_ptrs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_interpolation_helper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_i_tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_key_frame.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_keyframe_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_object_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_quad_part.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classsf_1_1_rectangle_shape.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_scroll_box.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_s_f_m_l_input_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classsf_1_1_shape.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_shape_key_frames.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_shapes.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="struct_shape_slot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_shape_tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_signal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_slider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classsf_1_1_sprite.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_1_1_time.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_time_line.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_time_line_viewer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_q_1_1_timer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_tool_box.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_transform_tool.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classsf_1_1_view.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="_anim_structs_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_button_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_camera_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_canvas_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_canvas_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_colour_panel_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_colour_picker_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_colour_tool_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_ellipse_shape_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_enums_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_event_handler_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_input_handler_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_interaction_ptrs_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_interpolation_helper_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_interpolation_helper_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_i_tool_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_joint_tool_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_keyframe_manager_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_object_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_object_data_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_quad_part_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_scroll_box_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_shapes_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_shapes_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_shape_tool_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_signal_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_slider_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_time_line_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_time_line_viewer_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_timer_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_timer_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_tool_box_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_transform_tool_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

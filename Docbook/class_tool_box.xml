@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_tool_box">
+<title>ToolBox class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_tool_box_8h">&lt;ToolBox.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; std::string, ITool * &gt; m_Tools<para><emphasis>map of polymorphic ITool pointers and their associated name keys</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ITool * m_pSelectedTool<para><emphasis>the currrently selected tool</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_tool_box_1a475f7f91136ff1b2bf6560d59ffe5030">ToolBox</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Constructor that takes &quot;iteractionPtrs&quot; which contains most of the useful classes that tools need to interact with.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_tool_box_1a846117abb3a667673f8c71d07c9a8a98">~ToolBox</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1ac2512eeee3fb8915bb20eaa07f30bca0">Update</link> (
+float p_DeltaTime)<para><emphasis>Update function.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1ac3414410d0d14deb45099e75b17a9fe4">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_State)<para><emphasis>OnMouseClick callback function, registered to the input handlers mouse click signal.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a08a321df9ac5a75abbd1a300d28ff117">OnMouseMove</link> (
+sf::Vector2i p_WindowPos, sf::Vector2f p_WorldPos)<para><emphasis>OnMouseMove callback function, registered to the input handlers mouse move extra signal.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a69078e5a71a14b9103f981762b5d7860">SetActive</link> (
+bool p_bActive)<para><emphasis>Set the active state of the current tool.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a5d8f199ab6a81fd41e6f6052d87b170d">SelectDraw</link> (
+)<para><emphasis>Set the draw tool as the currently selected tool.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a441285f2023171e76dec4241cdd51b0b">SelectTransform</link> (
+)<para><emphasis>Set the transform tool as the currently selected tool.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a32473bb26bb4c4a7f98866cf8b435c4e">SelectColour</link> (
+)<para><emphasis>Set the colour tool as the currently selected tool.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a07c9c626ce1c9002084303a5b6cd3e27">SelectJoint</link> (
+)<para><emphasis>Set the joint tool as the currently selected tool.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_tool_box_1a95b5c8ae8056d48eec3ea16bac91af62">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw anything that the currently selected tool needs drawing.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the creation and switching of tools. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_tool_box_1a475f7f91136ff1b2bf6560d59ffe5030">
+                <title>ToolBox::ToolBox (InteractionPtrs *p_pSP)</title> <emphasis>Constructor that takes &quot;iteractionPtrs&quot; which contains most of the useful classes that tools need to interact with.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a846117abb3a667673f8c71d07c9a8a98">
+                <title>ToolBox::~ToolBox ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1ac2512eeee3fb8915bb20eaa07f30bca0">
+                <title>void ToolBox::Update (float p_DeltaTime)</title> <emphasis>Update function.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1ac3414410d0d14deb45099e75b17a9fe4">
+                <title>void ToolBox::OnMouseClick (sf::Mouse::Button p_Button, bool p_State)</title> <emphasis>OnMouseClick callback function, registered to the input handlers mouse click signal.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a08a321df9ac5a75abbd1a300d28ff117">
+                <title>void ToolBox::OnMouseMove (sf::Vector2i p_WindowPos, sf::Vector2f p_WorldPos)</title> <emphasis>OnMouseMove callback function, registered to the input handlers mouse move extra signal.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a69078e5a71a14b9103f981762b5d7860">
+                <title>void ToolBox::SetActive (bool p_bActive)</title> <emphasis>Set the active state of the current tool.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a5d8f199ab6a81fd41e6f6052d87b170d">
+                <title>void ToolBox::SelectDraw ()</title> <emphasis>Set the draw tool as the currently selected tool.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a441285f2023171e76dec4241cdd51b0b">
+                <title>void ToolBox::SelectTransform ()</title> <emphasis>Set the transform tool as the currently selected tool.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a32473bb26bb4c4a7f98866cf8b435c4e">
+                <title>void ToolBox::SelectColour ()</title> <emphasis>Set the colour tool as the currently selected tool.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a07c9c626ce1c9002084303a5b6cd3e27">
+                <title>void ToolBox::SelectJoint ()</title> <emphasis>Set the joint tool as the currently selected tool.</emphasis>
+                
+            </section>
+            <section xml:id="class_tool_box_1a95b5c8ae8056d48eec3ea16bac91af62">
+                <title>void ToolBox::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw anything that the currently selected tool needs drawing.</emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_camera">
+<title>Camera class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_camera_8h">&lt;Camera.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bMoving<para><emphasis>is the camera being moved</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2i m_MousePos<para><emphasis>The mouse position in the window.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2i m_MouseStartPos<para><emphasis>The mouse start position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_ViewStartPos<para><emphasis>The view&apos;s start position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_ZoomSpeed<para><emphasis>The zoom speed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_ZoomFactor<para><emphasis>by how much in the x and y have we zoomed in or out</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_InitialSize<para><emphasis>The initial size of the view.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_Scale<para><emphasis>The scale that we have zoomed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_camera_1a0c1efce0a93d56215af15a6bc88f360f">Camera</link> (
+sf::Vector2f p_Center, sf::Vector2f p_Size)<para><emphasis>constructor that takes a centre position and a size</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_camera_1a58eedba9725c44625b3e983221aaf444">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>Callback for mouse click events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_camera_1a43f67138a331c8fe5d5fc144b47c0a41">OnMouseWheel</link> (
+float p_fDelta)<para><emphasis>Callback for mouse wheel events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_camera_1adf59388a392cf0195b3b1076d9fd27dd">OnMouseMove</link> (
+sf::Vector2i p_Position)<para><emphasis>Callback for mouse move events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_camera_1ab6170a0b0ed8ef476d658fc18cf1c96b">getScale</link> (
+)<para><emphasis>Scale getter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>A class that inherits from sf::view that handles translations and zooming. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_camera_1a0c1efce0a93d56215af15a6bc88f360f">
+                <title>Camera::Camera (sf::Vector2f p_Center, sf::Vector2f p_Size)</title> <emphasis>constructor that takes a centre position and a size</emphasis>
+                
+            </section>
+            <section xml:id="class_camera_1a58eedba9725c44625b3e983221aaf444">
+                <title>void Camera::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState)</title> <emphasis>Callback for mouse click events.</emphasis>
+                
+            </section>
+            <section xml:id="class_camera_1a43f67138a331c8fe5d5fc144b47c0a41">
+                <title>void Camera::OnMouseWheel (float p_fDelta)</title> <emphasis>Callback for mouse wheel events.</emphasis>
+                
+            </section>
+            <section xml:id="class_camera_1adf59388a392cf0195b3b1076d9fd27dd">
+                <title>void Camera::OnMouseMove (sf::Vector2i p_Position)</title> <emphasis>Callback for mouse move events.</emphasis>
+                
+            </section>
+            <section xml:id="class_camera_1ab6170a0b0ed8ef476d658fc18cf1c96b">
+                <title>sf::Vector2f Camera::getScale ()</title> <emphasis>Scale getter.</emphasis>
+                
+            </section>
+</section>

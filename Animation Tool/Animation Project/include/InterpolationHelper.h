@@ -2,7 +2,7 @@
 #include "SFML/Graphics.hpp"
 
 /**
- * @class Interpolation Helper
+ * @class InterpolationHelper
  * @brief Contains methods for interplating between two positions
  */
 class InterpolationHelper {

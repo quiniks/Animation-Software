@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_frame_slot">
+<title>FrameSlot struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_time_line_8h">&lt;TimeLine.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_Active</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_Rect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_KeyFrame</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Struct that holds data for frame slots. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+</section>

@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_quad_part">
+<title>QuadPart class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_quad_part_8h">&lt;QuadPart.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_Position<para><emphasis>The Position of the quadpart (treat it like a point that can be defined as being anywhere and not as something like centre point)</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_Rotation<para><emphasis>The rotation of the quadpart.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::VertexArray m_Quad<para><emphasis>The quadrilateral vertex array.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_Visible<para><emphasis>Is the vertex array visible.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Vector2f &gt; m_AAVertices<para><emphasis>The axis aligned set of vertices.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; QuadPart * &gt; m_JointChilds<para><emphasis>A vector of quadpart pointers that are considered child joints.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QuadPart * m_JointParent<para><emphasis>the parent joint quadpart</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::CircleShape m_DebugPos<para><emphasis>Circle shape used to visually debug the position point.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::VertexArray m_Line<para><emphasis>Line shape used to visually debug the joints.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a9468a0cbc2b35562e0eb94cbb771afd3">Initialise</link> (
+)<para><emphasis>Initialise method called on construction.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1adda75af308d6f29daa58a57065205645">Update</link> (
+)<para><emphasis>Update method that handles an axis aligned set of vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a47afbb2df824fe8b91f9010a74de7908">MoveVertices</link> (
+sf::Vector2f p_Offset)<para><emphasis>Method to move all and only the vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a7c837a3e6c944ecbf417e2d9e16dfc36">RotateVertices</link> (
+float p_Offset, sf::Vector2f p_PointOfRot)<para><emphasis>Method to rotate the quadpart (vertices and pos) around a point of rotation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a90b114d5410c468422abc091a94cc35f">RotateChild</link> (
+float p_Offset, sf::Vector2f p_PointOfRot)<para><emphasis>Method that rotates this and all child joint quadparts around a given point of rotation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_quad_part_1a02a85dd558945b04293fd3e1cecf0ee3">MiddleOf</link> (
+sf::Vector2f p_Pos1, sf::Vector2f p_Pos2)<para><emphasis>Method for calculating the middle point of two vectors.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_quad_part_1a953ac1358c8bdd586bb477a02d42434f">QuadPart</link> (
+)<para><emphasis>Defualt constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_quad_part_1a20fce309e6b74fc24d04f6cee536600a">QuadPart</link> (
+sf::Vector2f p_Pos, sf::Vector2f p_Size)<para><emphasis>Constructor the sets the position and size.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1ac4f581071de7de0dff0a757a958f67d8">SetOrigin</link> (
+sf::Vector2f p_Pos)<para><emphasis>Method for setting the origin (only moves the position vector2f)</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1abd2f83c6c31cb1a05c97bc5711a22564">ReSize</link> (
+sf::Vector2f p_Offset, unsigned int p_iHandle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a7bd2f2bdb282afb965cc54847c6edfec">Move</link> (
+sf::Vector2f p_Offset)<para><emphasis>Moves the position and the vertices by an offset.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1ae93071d8999ff84fb5a428c21ba0056b">Rotate</link> (
+float p_Offset)<para><emphasis>Method that rotates the shape by an offset.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a21cd672702cbe804d4d836100aa3364f">SetPosition</link> (
+sf::Vector2f p_Pos)<para><emphasis>Method for setting the position of the quadpart, this includes the vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a81263369e0fef805b7bf9f2f0358ef16">SetRotation</link> (
+float p_Angle)<para><emphasis>Method for setting the rotation at a given angle.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_quad_part_1a5fdd5de2794207b95d573744de8f1837">GetPosition</link> (
+)<para><emphasis>Returns the positon.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="class_quad_part_1ad6b073d0b128af590944337a2a01d2b3">GetRotation</link> (
+)<para><emphasis>Returns the rotation.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_quad_part_1acd1a5f5d8d9a780208be5b75b1900d3c">GetVertex</link> (
+unsigned int p_Vertex)<para><emphasis>Returns one of the four vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_quad_part_1a978cb59cb2c4e3407421cef33f8f02d3">GetVertex8</link> (
+unsigned int p_Vertex)<para><emphasis>Returns one of the four vertices or four middle points of each side.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_quad_part_1af2fa5ea599fa1f615594ff7de7914b2f">GetSize</link> (
+)<para><emphasis>Returns the size of the shape determined by the axis aligned vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_object_data">ObjectData</link> <link linkend="class_quad_part_1a385dadc4c3fc18850ce4767cf9b6d4d1">GetObjectData</link> (
+)<para><emphasis>Returns the objects data i.e. position, rotation and vertices.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a535018d0d56f62b8b81b0ba20e5df85e">LoadObjectData</link> (
+<link linkend="class_object_data">ObjectData</link> p_ObjectData)<para><emphasis>Transforms the shape based on given object data.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_quad_part_1af7c03b4820eb97c2041d858c3887bb32">Contains</link> (
+sf::Vector2f p_Pos)<para><emphasis>Checks if a positon is inside the quadpart.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a9dcdf03c207526585f6a7ab360c3b95d">SetParent</link> (
+<link linkend="class_quad_part">QuadPart</link> * p_JointParent)<para><emphasis>Sets the joint parent quadpart pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1aa530277bca8174dc90ef2e3f322860ae">AddChild</link> (
+<link linkend="class_quad_part">QuadPart</link> * p_JointChild)<para><emphasis>Adds a joint child quadpart pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_quad_part">QuadPart</link> * <link linkend="class_quad_part_1a9095c027b5a6794b34187fa7f228cf17">getParent</link> (
+)<para><emphasis>Returns a pointer of the joint parent quadpart.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_quad_part">QuadPart</link> * <link linkend="class_quad_part_1a477fcd6f9c62b8b1522cc9f5bbd1c1c8">getChild</link> (
+unsigned int p_I)<para><emphasis>Returms a pointer of a joint child quadpart using an index p_I.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_quad_part_1a6fd8400fe0915bd1029f7c2ef1b17096">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw method for drawing debug shapes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>A class that can handle more complex transformations and store joint data Made from a basic vertex array to allow for more precise transformations than that of an SFML shape. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_quad_part_1a9468a0cbc2b35562e0eb94cbb771afd3">
+                <title>void QuadPart::Initialise ()</title> <emphasis>Initialise method called on construction.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1adda75af308d6f29daa58a57065205645">
+                <title>void QuadPart::Update ()</title> <emphasis>Update method that handles an axis aligned set of vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a47afbb2df824fe8b91f9010a74de7908">
+                <title>void QuadPart::MoveVertices (sf::Vector2f p_Offset)</title> <emphasis>Method to move all and only the vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a7c837a3e6c944ecbf417e2d9e16dfc36">
+                <title>void QuadPart::RotateVertices (float p_Offset, sf::Vector2f p_PointOfRot)</title> <emphasis>Method to rotate the quadpart (vertices and pos) around a point of rotation.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a90b114d5410c468422abc091a94cc35f">
+                <title>void QuadPart::RotateChild (float p_Offset, sf::Vector2f p_PointOfRot)</title> <emphasis>Method that rotates this and all child joint quadparts around a given point of rotation.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a02a85dd558945b04293fd3e1cecf0ee3">
+                <title>sf::Vector2f QuadPart::MiddleOf (sf::Vector2f p_Pos1, sf::Vector2f p_Pos2)</title> <emphasis>Method for calculating the middle point of two vectors.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a953ac1358c8bdd586bb477a02d42434f">
+                <title>QuadPart::QuadPart ()</title> <emphasis>Defualt constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a20fce309e6b74fc24d04f6cee536600a">
+                <title>QuadPart::QuadPart (sf::Vector2f p_Pos, sf::Vector2f p_Size)</title> <emphasis>Constructor the sets the position and size.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1ac4f581071de7de0dff0a757a958f67d8">
+                <title>void QuadPart::SetOrigin (sf::Vector2f p_Pos)</title> <emphasis>Method for setting the origin (only moves the position vector2f)</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1abd2f83c6c31cb1a05c97bc5711a22564">
+                <title>void QuadPart::ReSize (sf::Vector2f p_Offset, unsigned int p_iHandle)</title> <emphasis></emphasis>
+                
+<para>Method for resizing the shape by a given offset and a handle that determines how to apply the offset Handle can 0 through 7 and will allow the translation of either one of the four vertices or one of the four sides sides being locked from translating in the direction along their line </para>
+
+            </section>
+            <section xml:id="class_quad_part_1a7bd2f2bdb282afb965cc54847c6edfec">
+                <title>void QuadPart::Move (sf::Vector2f p_Offset)</title> <emphasis>Moves the position and the vertices by an offset.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1ae93071d8999ff84fb5a428c21ba0056b">
+                <title>void QuadPart::Rotate (float p_Offset)</title> <emphasis>Method that rotates the shape by an offset.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a21cd672702cbe804d4d836100aa3364f">
+                <title>void QuadPart::SetPosition (sf::Vector2f p_Pos)</title> <emphasis>Method for setting the position of the quadpart, this includes the vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a81263369e0fef805b7bf9f2f0358ef16">
+                <title>void QuadPart::SetRotation (float p_Angle)</title> <emphasis>Method for setting the rotation at a given angle.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a5fdd5de2794207b95d573744de8f1837">
+                <title>sf::Vector2f QuadPart::GetPosition ()</title> <emphasis>Returns the positon.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1ad6b073d0b128af590944337a2a01d2b3">
+                <title>float QuadPart::GetRotation ()</title> <emphasis>Returns the rotation.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1acd1a5f5d8d9a780208be5b75b1900d3c">
+                <title>sf::Vector2f QuadPart::GetVertex (unsigned int p_Vertex)</title> <emphasis>Returns one of the four vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a978cb59cb2c4e3407421cef33f8f02d3">
+                <title>sf::Vector2f QuadPart::GetVertex8 (unsigned int p_Vertex)</title> <emphasis>Returns one of the four vertices or four middle points of each side.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1af2fa5ea599fa1f615594ff7de7914b2f">
+                <title>sf::Vector2f QuadPart::GetSize ()</title> <emphasis>Returns the size of the shape determined by the axis aligned vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a385dadc4c3fc18850ce4767cf9b6d4d1">
+                <title>ObjectData QuadPart::GetObjectData ()</title> <emphasis>Returns the objects data i.e. position, rotation and vertices.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a535018d0d56f62b8b81b0ba20e5df85e">
+                <title>void QuadPart::LoadObjectData (ObjectData p_ObjectData)</title> <emphasis>Transforms the shape based on given object data.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1af7c03b4820eb97c2041d858c3887bb32">
+                <title>bool QuadPart::Contains (sf::Vector2f p_Pos)</title> <emphasis>Checks if a positon is inside the quadpart.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a9dcdf03c207526585f6a7ab360c3b95d">
+                <title>void QuadPart::SetParent (QuadPart *p_JointParent)</title> <emphasis>Sets the joint parent quadpart pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1aa530277bca8174dc90ef2e3f322860ae">
+                <title>void QuadPart::AddChild (QuadPart *p_JointChild)</title> <emphasis>Adds a joint child quadpart pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a9095c027b5a6794b34187fa7f228cf17">
+                <title>QuadPart* QuadPart::getParent ()</title> <emphasis>Returns a pointer of the joint parent quadpart.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a477fcd6f9c62b8b1522cc9f5bbd1c1c8">
+                <title>QuadPart* QuadPart::getChild (unsigned int p_I)</title> <emphasis>Returms a pointer of a joint child quadpart using an index p_I.</emphasis>
+                
+            </section>
+            <section xml:id="class_quad_part_1a6fd8400fe0915bd1029f7c2ef1b17096">
+                <title>void QuadPart::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw method for drawing debug shapes.</emphasis>
+                
+            </section>
+</section>

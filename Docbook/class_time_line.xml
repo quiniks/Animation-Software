@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_time_line">
+<title>TimeLine class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_time_line_8h">&lt;TimeLine.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_Pos<para><emphasis>Position of time line.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_Size<para><emphasis>Size of the time line UI.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_Box<para><emphasis>Main rectangle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_HoriBar<para><emphasis>Background rectangle for horizontal slider bar.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_HoriHandle<para><emphasis>Handle rectangle for the horizontal slider bar.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_VertiBar<para><emphasis>Background rectangle for the vertical slider bar.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_VertiHandle<para><emphasis>Handle rectangle for the vertical slider bar.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_KeySlider<para><emphasis>Current keyframe slider rectangle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::VertexArray m_Line<para><emphasis>Line to seperate shape slots from frame slots.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; ShapeSlot &gt; m_Slots<para><emphasis>Vector containing the shape slots that in turn hold the frame slots.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const flat_set&lt; ShapeKeyFrames, CompareId &gt; * m_ShapesAndKeysPtr<para><emphasis>pointer to the ordered shape data</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_TotalFrames<para><emphasis>Total frames.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_CurrentFrame<para><emphasis>The current frame number.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_FramePeriod<para><emphasis>The time between frames.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_VertiHandleVisible<para><emphasis>Is the vertical slider bar visible boolean.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_HoriHandleVisible<para><emphasis>Is the horizontal slider bar visible boolean.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_KeySliderVisible<para><emphasis>Is the current frame slider visible boolean.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MouseHandleOffset<para><emphasis>The mouse&apos;s offset from another position i.e. the slider handles.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverVertiHandle<para><emphasis>Is the mouse over the vertical slider handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_UsingVertiHandle<para><emphasis>Is the vertical slider being used.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_VertiHandleScalar<para><emphasis>Scalar for the vertical slider handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverHoriHandle<para><emphasis>Is the the mouse over the horizontal handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_UsingHoriHandle<para><emphasis>is the horizontal handle being used</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverKeySlider<para><emphasis>is the mouse over the current frame slider</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsUsingKeySlider<para><emphasis>is the current frame slider being used</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_FrameIndex<para><emphasis>Frame index is the offset to the first frame slot.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_ShapeIndex<para><emphasis>Shape index is the offset to the first shape slot.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Font m_Font<para><emphasis>Font used by the time line UI.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Text &gt; m_FrameTimes<para><emphasis>Vector of text for frame times along the time line.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_ShapeBoxWidth<para><emphasis>width of the shape slot box</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_BarWidth<para><emphasis>width of the slider bars</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int m_FrameSlots<para><emphasis>number of visible frame slots</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int m_ShapeSlots<para><emphasis>number of shape slots</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_Index<para><emphasis>Not used.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_TotalShapes<para><emphasis>Total shapes.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_FrameSlotWidth<para><emphasis>Frame slot width.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MousePos<para><emphasis>Mouse position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; unsigned int &gt; SetKeyFrame<para><emphasis>Signal for keyframe being set.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1a5e92f15af861e614e25a3602a531a304">UpdateFrameSlots</link> (
+)<para><emphasis>Update the frame slots data.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1a36a222c1f6861911972d5b325e1099fc">SetUpTimes</link> (
+)<para><emphasis>Sets up the frame times on the time line.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1aaefee59f496e742266c1bd1bb749cad0">UpdateTimes</link> (
+)<para><emphasis>Updates the frame times.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_time_line_1a48cda2f285f06a06211724178d01383d">TimeLine</link> (
+sf::Vector2f p_Pos, sf::Vector2f p_Size, unsigned int p_FrameRate, unsigned int p_TotalFrames)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1abd8b8a4340ad3dda404a7b48d5b1e0f9">Update</link> (
+const flat_set&lt; <link linkend="struct_shape_key_frames">ShapeKeyFrames</link>, <link linkend="struct_compare_id">CompareId</link> &gt; &amp; p_ShapesAndKeys, FrameState p_FrameState)<para><emphasis>Update the shape and frame slots with the keyframe data.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1a5792226d36ccba7466e7f2986fd0702a">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>draw the the UI</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1a280a51390bb34ebe26a434b871f81add">OnMouseClick</link> (
+bool p_State)<para><emphasis>callback for mouse click</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_1a30ecec78f9815577bd56715ba697e7c6">OnMouseMove</link> (
+sf::Vector2i p_Pos)<para><emphasis>callback for mouse move</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Creates and manages a user interface to deal with &quot;ShapeKeyFrame&quot; data. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_time_line_1a5e92f15af861e614e25a3602a531a304">
+                <title>void TimeLine::UpdateFrameSlots ()</title> <emphasis>Update the frame slots data.</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1a36a222c1f6861911972d5b325e1099fc">
+                <title>void TimeLine::SetUpTimes ()</title> <emphasis>Sets up the frame times on the time line.</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1aaefee59f496e742266c1bd1bb749cad0">
+                <title>void TimeLine::UpdateTimes ()</title> <emphasis>Updates the frame times.</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1a48cda2f285f06a06211724178d01383d">
+                <title>TimeLine::TimeLine (sf::Vector2f p_Pos, sf::Vector2f p_Size, unsigned int p_FrameRate, unsigned int p_TotalFrames)</title> <emphasis>Constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1abd8b8a4340ad3dda404a7b48d5b1e0f9">
+                <title>void TimeLine::Update (const flat_set&lt; ShapeKeyFrames, CompareId &gt; &amp;p_ShapesAndKeys, FrameState p_FrameState)</title> <emphasis>Update the shape and frame slots with the keyframe data.</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1a5792226d36ccba7466e7f2986fd0702a">
+                <title>void TimeLine::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>draw the the UI</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1a280a51390bb34ebe26a434b871f81add">
+                <title>void TimeLine::OnMouseClick (bool p_State)</title> <emphasis>callback for mouse click</emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_1a30ecec78f9815577bd56715ba697e7c6">
+                <title>void TimeLine::OnMouseMove (sf::Vector2i p_Pos)</title> <emphasis>callback for mouse move</emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,37 @@
+\hypertarget{struct_compare_id}{}\section{Compare\+Id Struct Reference}
+\label{struct_compare_id}\index{Compare\+Id@{Compare\+Id}}
+
+
+Comparator that orders \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} by their ID.  
+
+
+
+
+{\ttfamily \#include $<$Anim\+Structs.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_compare_id_a7dd0fa1db14a369c56c98ec8339ecf07}\label{struct_compare_id_a7dd0fa1db14a369c56c98ec8339ecf07}} 
+using {\bfseries is\+\_\+transparent} = void
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_compare_id_a0508f38a87a7e0e225bf9212eba2cd10}\label{struct_compare_id_a0508f38a87a7e0e225bf9212eba2cd10}} 
+bool {\bfseries operator()} (const \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} \&p\+\_\+A, const \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} \&p\+\_\+B) const
+\item 
+\mbox{\Hypertarget{struct_compare_id_aec862adedfa044927c723dc90e9950ef}\label{struct_compare_id_aec862adedfa044927c723dc90e9950ef}} 
+bool {\bfseries operator()} (unsigned int p\+\_\+\+ID, const \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} \&p\+\_\+\+Shape\+Key\+Frames) const
+\item 
+\mbox{\Hypertarget{struct_compare_id_a8278695c08e3c32f83db065a124f74ea}\label{struct_compare_id_a8278695c08e3c32f83db065a124f74ea}} 
+bool {\bfseries operator()} (const \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} \&p\+\_\+\+Shape\+Key\+Frames, unsigned int p\+\_\+\+ID) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Comparator that orders \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames} by their ID. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Anim\+Structs.\+h\end{DoxyCompactItemize}

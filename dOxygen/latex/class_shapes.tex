@@ -1,0 +1,62 @@
+\hypertarget{class_shapes}{}\section{Shapes Class Reference}
+\label{class_shapes}\index{Shapes@{Shapes}}
+
+
+container class that handles the creation and getting of objects via I\+Ds  
+
+
+
+
+{\ttfamily \#include $<$Shapes.\+h$>$}
+
+Inheritance diagram for Shapes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shapes}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shapes_a507aab492a4840275d9cc6dea090d880}\label{class_shapes_a507aab492a4840275d9cc6dea090d880}} 
+std\+::pair$<$ unsigned int, \hyperlink{class_object}{Object} $\ast$ $>$ \hyperlink{class_shapes_a507aab492a4840275d9cc6dea090d880}{New\+Shape} (\hyperlink{class_object}{Object} p\+\_\+\+New\+Object)
+\begin{DoxyCompactList}\small\item\em Adds a copy of a shape to the shape map and returns its ID and pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a95aba282963cca12a01ee17066af9297}\label{class_shapes_a95aba282963cca12a01ee17066af9297}} 
+\hyperlink{class_object}{Object} \& \hyperlink{class_shapes_a95aba282963cca12a01ee17066af9297}{Find\+Shape} (unsigned int p\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Locates and returns a reference to a shape with ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a8651d6e746556b68623156dcce5202bc}\label{class_shapes_a8651d6e746556b68623156dcce5202bc}} 
+std\+::vector$<$ \hyperlink{class_object}{Object} $\ast$ $>$ \hyperlink{class_shapes_a8651d6e746556b68623156dcce5202bc}{Get\+Objects} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector with pointers to all the current objects in the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_ab1d661641f51d136fd840367562580ef}\label{class_shapes_ab1d661641f51d136fd840367562580ef}} 
+std\+::map$<$ unsigned int, \hyperlink{class_object_data}{Object\+Data} $>$ \hyperlink{class_shapes_ab1d661641f51d136fd840367562580ef}{Get\+I\+D\+And\+Datas} ()
+\begin{DoxyCompactList}\small\item\em Returns a map containing all the I\+Ds and object data of shapes currently in the shapes map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a0de59bfbb215384f9027301817bcd4a1}\label{class_shapes_a0de59bfbb215384f9027301817bcd4a1}} 
+std\+::map$<$ unsigned int, \hyperlink{class_object}{Object} $\ast$ $>$ \hyperlink{class_shapes_a0de59bfbb215384f9027301817bcd4a1}{Get\+I\+D\+And\+Objects} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of I\+Ds and object pointers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a7dbae8132686e181679f4a543b0dc128}\label{class_shapes_a7dbae8132686e181679f4a543b0dc128}} 
+void \hyperlink{class_shapes_a7dbae8132686e181679f4a543b0dc128}{Delete\+Shape} (unsigned int p\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Deletes an object with associated ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a4cb9b0b2e974c63e3182103626b582a4}\label{class_shapes_a4cb9b0b2e974c63e3182103626b582a4}} 
+unsigned int \hyperlink{class_shapes_a4cb9b0b2e974c63e3182103626b582a4}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em returns the size of the shapes\textquotesingle{} map \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_aab0b2aa58534e707e13f8651f5a6e55d}\label{class_shapes_aab0b2aa58534e707e13f8651f5a6e55d}} 
+void \hyperlink{class_shapes_aab0b2aa58534e707e13f8651f5a6e55d}{Update\+Shapes} ()
+\begin{DoxyCompactList}\small\item\em calls all the shapes update methods \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shapes_a5d0ed4de4f10f3a81f2eff482550c448}\label{class_shapes_a5d0ed4de4f10f3a81f2eff482550c448}} 
+void \hyperlink{class_shapes_a5d0ed4de4f10f3a81f2eff482550c448}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draws the shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shapes_aa818577f33ff41432500e96cfb07d1f9}\label{class_shapes_aa818577f33ff41432500e96cfb07d1f9}} 
+\hyperlink{class_signal}{Signal}$<$ unsigned int $>$ \hyperlink{class_shapes_aa818577f33ff41432500e96cfb07d1f9}{On\+Created}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_signal}{Signal} for creation of shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+container class that handles the creation and getting of objects via I\+Ds 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Shapes.\+h\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Shapes.\+cpp\end{DoxyCompactItemize}

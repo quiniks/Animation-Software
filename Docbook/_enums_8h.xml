@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_enums_8h">
+    <title>Enums.h File Reference</title>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_enums_8h_1a5a4538eeab397888d88a4eefcc5a1345">ShapeType</link> {
+<link linkend="_enums_8h_1a5a4538eeab397888d88a4eefcc5a1345ab3b3e7840164c493ebbd2a6033041551">RectangleType</link>,
+<link linkend="_enums_8h_1a5a4538eeab397888d88a4eefcc5a1345a4634641b8c17c68671d701fd80293e83">EllipseType</link>,
+<link linkend="_enums_8h_1a5a4538eeab397888d88a4eefcc5a1345a667876a6f108081ad524d7d29d23d506">End</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_enums_8h_1ae14d5cd4a1a6c41237f81f3ae6e8a075">AnimState</link> {
+<link linkend="_enums_8h_1ae14d5cd4a1a6c41237f81f3ae6e8a075a63fb97da872bff3b2c623de28fdae93b">Playing</link>,
+<link linkend="_enums_8h_1ae14d5cd4a1a6c41237f81f3ae6e8a075a4d049c6d45e08a294523df186ad77a75">Stopped</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="_enums_8h_1a9104142d74f294b3d48993bd357ccea7">FrameState</link> {
+<link linkend="_enums_8h_1a9104142d74f294b3d48993bd357ccea7abb6b4a74cd62fcd5b8c9ce956dc272d1">Recorded</link>,
+<link linkend="_enums_8h_1a9104142d74f294b3d48993bd357ccea7a04ba35ff69a05b2a16733a01fc003d88">Deleted</link>,
+<link linkend="_enums_8h_1a9104142d74f294b3d48993bd357ccea7a20120ef9c542d271e929c93efa56b665">Set</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/Enums.h</para>
+    </simplesect>
+</section>

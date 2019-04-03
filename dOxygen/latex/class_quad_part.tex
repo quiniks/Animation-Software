@@ -1,0 +1,129 @@
+\hypertarget{class_quad_part}{}\section{Quad\+Part Class Reference}
+\label{class_quad_part}\index{Quad\+Part@{Quad\+Part}}
+
+
+A class that can handle more complex transformations and store joint data Made from a basic vertex array to allow for more precise transformations than that of an S\+F\+ML shape.  
+
+
+
+
+{\ttfamily \#include $<$Quad\+Part.\+h$>$}
+
+Inheritance diagram for Quad\+Part\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quad_part}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quad_part_a953ac1358c8bdd586bb477a02d42434f}\label{class_quad_part_a953ac1358c8bdd586bb477a02d42434f}} 
+\hyperlink{class_quad_part_a953ac1358c8bdd586bb477a02d42434f}{Quad\+Part} ()
+\begin{DoxyCompactList}\small\item\em Defualt constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a20fce309e6b74fc24d04f6cee536600a}\label{class_quad_part_a20fce309e6b74fc24d04f6cee536600a}} 
+\hyperlink{class_quad_part_a20fce309e6b74fc24d04f6cee536600a}{Quad\+Part} (sf\+::\+Vector2f p\+\_\+\+Pos, sf\+::\+Vector2f p\+\_\+\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor the sets the position and size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_ac4f581071de7de0dff0a757a958f67d8}\label{class_quad_part_ac4f581071de7de0dff0a757a958f67d8}} 
+void \hyperlink{class_quad_part_ac4f581071de7de0dff0a757a958f67d8}{Set\+Origin} (sf\+::\+Vector2f p\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Method for setting the origin (only moves the position vector2f) \end{DoxyCompactList}\item 
+void \hyperlink{class_quad_part_abd2f83c6c31cb1a05c97bc5711a22564}{Re\+Size} (sf\+::\+Vector2f p\+\_\+\+Offset, unsigned int p\+\_\+i\+Handle)
+\item 
+\mbox{\Hypertarget{class_quad_part_a7bd2f2bdb282afb965cc54847c6edfec}\label{class_quad_part_a7bd2f2bdb282afb965cc54847c6edfec}} 
+void \hyperlink{class_quad_part_a7bd2f2bdb282afb965cc54847c6edfec}{Move} (sf\+::\+Vector2f p\+\_\+\+Offset)
+\begin{DoxyCompactList}\small\item\em Moves the position and the vertices by an offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_ae93071d8999ff84fb5a428c21ba0056b}\label{class_quad_part_ae93071d8999ff84fb5a428c21ba0056b}} 
+void \hyperlink{class_quad_part_ae93071d8999ff84fb5a428c21ba0056b}{Rotate} (float p\+\_\+\+Offset)
+\begin{DoxyCompactList}\small\item\em Method that rotates the shape by an offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a21cd672702cbe804d4d836100aa3364f}\label{class_quad_part_a21cd672702cbe804d4d836100aa3364f}} 
+void \hyperlink{class_quad_part_a21cd672702cbe804d4d836100aa3364f}{Set\+Position} (sf\+::\+Vector2f p\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Method for setting the position of the quadpart, this includes the vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a81263369e0fef805b7bf9f2f0358ef16}\label{class_quad_part_a81263369e0fef805b7bf9f2f0358ef16}} 
+void \hyperlink{class_quad_part_a81263369e0fef805b7bf9f2f0358ef16}{Set\+Rotation} (float p\+\_\+\+Angle)
+\begin{DoxyCompactList}\small\item\em Method for setting the rotation at a given angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a5fdd5de2794207b95d573744de8f1837}\label{class_quad_part_a5fdd5de2794207b95d573744de8f1837}} 
+sf\+::\+Vector2f \hyperlink{class_quad_part_a5fdd5de2794207b95d573744de8f1837}{Get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Returns the positon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_ad6b073d0b128af590944337a2a01d2b3}\label{class_quad_part_ad6b073d0b128af590944337a2a01d2b3}} 
+float \hyperlink{class_quad_part_ad6b073d0b128af590944337a2a01d2b3}{Get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Returns the rotation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_acd1a5f5d8d9a780208be5b75b1900d3c}\label{class_quad_part_acd1a5f5d8d9a780208be5b75b1900d3c}} 
+sf\+::\+Vector2f \hyperlink{class_quad_part_acd1a5f5d8d9a780208be5b75b1900d3c}{Get\+Vertex} (unsigned int p\+\_\+\+Vertex)
+\begin{DoxyCompactList}\small\item\em Returns one of the four vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a978cb59cb2c4e3407421cef33f8f02d3}\label{class_quad_part_a978cb59cb2c4e3407421cef33f8f02d3}} 
+sf\+::\+Vector2f \hyperlink{class_quad_part_a978cb59cb2c4e3407421cef33f8f02d3}{Get\+Vertex8} (unsigned int p\+\_\+\+Vertex)
+\begin{DoxyCompactList}\small\item\em Returns one of the four vertices or four middle points of each side. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_af2fa5ea599fa1f615594ff7de7914b2f}\label{class_quad_part_af2fa5ea599fa1f615594ff7de7914b2f}} 
+sf\+::\+Vector2f \hyperlink{class_quad_part_af2fa5ea599fa1f615594ff7de7914b2f}{Get\+Size} ()
+\begin{DoxyCompactList}\small\item\em Returns the size of the shape determined by the axis aligned vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a385dadc4c3fc18850ce4767cf9b6d4d1}\label{class_quad_part_a385dadc4c3fc18850ce4767cf9b6d4d1}} 
+\hyperlink{class_object_data}{Object\+Data} \hyperlink{class_quad_part_a385dadc4c3fc18850ce4767cf9b6d4d1}{Get\+Object\+Data} ()
+\begin{DoxyCompactList}\small\item\em Returns the objects data i.\+e. position, rotation and vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a535018d0d56f62b8b81b0ba20e5df85e}\label{class_quad_part_a535018d0d56f62b8b81b0ba20e5df85e}} 
+void \hyperlink{class_quad_part_a535018d0d56f62b8b81b0ba20e5df85e}{Load\+Object\+Data} (\hyperlink{class_object_data}{Object\+Data} p\+\_\+\+Object\+Data)
+\begin{DoxyCompactList}\small\item\em Transforms the shape based on given object data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_af7c03b4820eb97c2041d858c3887bb32}\label{class_quad_part_af7c03b4820eb97c2041d858c3887bb32}} 
+bool \hyperlink{class_quad_part_af7c03b4820eb97c2041d858c3887bb32}{Contains} (sf\+::\+Vector2f p\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Checks if a positon is inside the quadpart. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a9dcdf03c207526585f6a7ab360c3b95d}\label{class_quad_part_a9dcdf03c207526585f6a7ab360c3b95d}} 
+void \hyperlink{class_quad_part_a9dcdf03c207526585f6a7ab360c3b95d}{Set\+Parent} (\hyperlink{class_quad_part}{Quad\+Part} $\ast$p\+\_\+\+Joint\+Parent)
+\begin{DoxyCompactList}\small\item\em Sets the joint parent quadpart pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_aa530277bca8174dc90ef2e3f322860ae}\label{class_quad_part_aa530277bca8174dc90ef2e3f322860ae}} 
+void \hyperlink{class_quad_part_aa530277bca8174dc90ef2e3f322860ae}{Add\+Child} (\hyperlink{class_quad_part}{Quad\+Part} $\ast$p\+\_\+\+Joint\+Child)
+\begin{DoxyCompactList}\small\item\em Adds a joint child quadpart pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a9095c027b5a6794b34187fa7f228cf17}\label{class_quad_part_a9095c027b5a6794b34187fa7f228cf17}} 
+\hyperlink{class_quad_part}{Quad\+Part} $\ast$ \hyperlink{class_quad_part_a9095c027b5a6794b34187fa7f228cf17}{get\+Parent} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer of the joint parent quadpart. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a477fcd6f9c62b8b1522cc9f5bbd1c1c8}\label{class_quad_part_a477fcd6f9c62b8b1522cc9f5bbd1c1c8}} 
+\hyperlink{class_quad_part}{Quad\+Part} $\ast$ \hyperlink{class_quad_part_a477fcd6f9c62b8b1522cc9f5bbd1c1c8}{get\+Child} (unsigned int p\+\_\+I)
+\begin{DoxyCompactList}\small\item\em Returms a pointer of a joint child quadpart using an index p\+\_\+I. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a6fd8400fe0915bd1029f7c2ef1b17096}\label{class_quad_part_a6fd8400fe0915bd1029f7c2ef1b17096}} 
+void \hyperlink{class_quad_part_a6fd8400fe0915bd1029f7c2ef1b17096}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw method for drawing debug shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_quad_part_a7d255fb66984146f4053216fb2d1b232}\label{class_quad_part_a7d255fb66984146f4053216fb2d1b232}} 
+sf\+::\+Vector2f \hyperlink{class_quad_part_a7d255fb66984146f4053216fb2d1b232}{m\+\_\+\+Position} = sf\+::\+Vector2f(0.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em The Position of the quadpart (treat it like a point that can be defined as being anywhere and not as something like centre point) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a22ba5ba93e3a4a42715f077a6a4d3fe5}\label{class_quad_part_a22ba5ba93e3a4a42715f077a6a4d3fe5}} 
+float \hyperlink{class_quad_part_a22ba5ba93e3a4a42715f077a6a4d3fe5}{m\+\_\+\+Rotation} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em The rotation of the quadpart. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_aba000e724202a95e712e134486d2bfad}\label{class_quad_part_aba000e724202a95e712e134486d2bfad}} 
+sf\+::\+Vertex\+Array \hyperlink{class_quad_part_aba000e724202a95e712e134486d2bfad}{m\+\_\+\+Quad} = sf\+::\+Vertex\+Array(sf\+::\+Quads, 4)
+\begin{DoxyCompactList}\small\item\em The quadrilateral vertex array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_afa3122aba86cf6789e3227cb17eead8e}\label{class_quad_part_afa3122aba86cf6789e3227cb17eead8e}} 
+bool \hyperlink{class_quad_part_afa3122aba86cf6789e3227cb17eead8e}{m\+\_\+\+Visible} = false
+\begin{DoxyCompactList}\small\item\em Is the vertex array visible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a0a10eb1fd79685ce1e45da9cc135eeea}\label{class_quad_part_a0a10eb1fd79685ce1e45da9cc135eeea}} 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \hyperlink{class_quad_part_a0a10eb1fd79685ce1e45da9cc135eeea}{m\+\_\+\+A\+A\+Vertices}
+\begin{DoxyCompactList}\small\item\em The axis aligned set of vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a8e70593060fcfcceff9ee0b1114a32ec}\label{class_quad_part_a8e70593060fcfcceff9ee0b1114a32ec}} 
+std\+::vector$<$ \hyperlink{class_quad_part}{Quad\+Part} $\ast$ $>$ \hyperlink{class_quad_part_a8e70593060fcfcceff9ee0b1114a32ec}{m\+\_\+\+Joint\+Childs}
+\begin{DoxyCompactList}\small\item\em A vector of quadpart pointers that are considered child joints. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_ab9aaf10324b5fb53b97bb78d5dce50f6}\label{class_quad_part_ab9aaf10324b5fb53b97bb78d5dce50f6}} 
+\hyperlink{class_quad_part}{Quad\+Part} $\ast$ \hyperlink{class_quad_part_ab9aaf10324b5fb53b97bb78d5dce50f6}{m\+\_\+\+Joint\+Parent} = nullptr
+\begin{DoxyCompactList}\small\item\em the parent joint quadpart \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a6efe36f01066bd02043fd5c347bde469}\label{class_quad_part_a6efe36f01066bd02043fd5c347bde469}} 
+sf\+::\+Circle\+Shape \hyperlink{class_quad_part_a6efe36f01066bd02043fd5c347bde469}{m\+\_\+\+Debug\+Pos}
+\begin{DoxyCompactList}\small\item\em Circle shape used to visually debug the position point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_quad_part_a88f47663d08376676056b0e1cb76ae5f}\label{class_quad_part_a88f47663d08376676056b0e1cb76ae5f}} 
+sf\+::\+Vertex\+Array \hyperlink{class_quad_part_a88f47663d08376676056b0e1cb76ae5f}{m\+\_\+\+Line}
+\begin{DoxyCompactList}\small\item\em Line shape used to visually debug the joints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that can handle more complex transformations and store joint data Made from a basic vertex array to allow for more precise transformations than that of an S\+F\+ML shape. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quad_part_abd2f83c6c31cb1a05c97bc5711a22564}\label{class_quad_part_abd2f83c6c31cb1a05c97bc5711a22564}} 
+\index{Quad\+Part@{Quad\+Part}!Re\+Size@{Re\+Size}}
+\index{Re\+Size@{Re\+Size}!Quad\+Part@{Quad\+Part}}
+\subsubsection{\texorpdfstring{Re\+Size()}{ReSize()}}
+{\footnotesize\ttfamily void Quad\+Part\+::\+Re\+Size (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{p\+\_\+\+Offset,  }\item[{unsigned int}]{p\+\_\+i\+Handle }\end{DoxyParamCaption})}
+
+Method for resizing the shape by a given offset and a handle that determines how to apply the offset Handle can 0 through 7 and will allow the translation of either one of the four vertices or one of the four sides sides being locked from translating in the direction along their line 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Quad\+Part.\+h\end{DoxyCompactItemize}

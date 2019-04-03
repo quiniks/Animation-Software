@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_scroll_box_8h">
+    <title>ScrollBox.h File Reference</title>
+    <programlisting>#include &quot;SFML/Graphics.hpp&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_scroll_box">ScrollBox</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/ScrollBox.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_quad_part_8h">
+    <title>QuadPart.h File Reference</title>
+    <programlisting>#include &lt;SFML/Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;ObjectData.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_quad_part">QuadPart</link></para>
+<para><emphasis>A class that can handle more complex transformations and store joint data
+Made from a basic vertex array to allow for more precise transformations than that of an SFML shape.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/QuadPart.h</para>
+    </simplesect>
+</section>

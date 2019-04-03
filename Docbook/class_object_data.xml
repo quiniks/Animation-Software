@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_object_data">
+<title>ObjectData class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_object_data_8h">&lt;ObjectData.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_Rotation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_Position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; sf::Vector2f &gt; m_Vertices</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Struct that holds object data i.e. position, rotation and vertices. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+</section>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_scroll_box">
+<title>ScrollBox class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f p_Pos</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f p_Size</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_ContainerSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_BarWidth</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_HoriBarVisible</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_VertiBarVisible</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_Box</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_HoriBar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_HoriHandle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_VertiBar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_VertiHandle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderTexture m_RenderTex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_scroll_box_1a94c60fde856433108c6548f0892ef253">ScrollBox</link> (
+sf::Vector2f p_Pos, sf::Vector2f p_Size, sf::Vector2f p_ContainerSize, bool p_HasVertiBar, bool p_HasHoriBar)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_scroll_box_1a9e2d78a8b045d678e67bb026888a1012">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_scroll_box_1a94c60fde856433108c6548f0892ef253">
+                <title>ScrollBox::ScrollBox (sf::Vector2f p_Pos, sf::Vector2f p_Size, sf::Vector2f p_ContainerSize, bool p_HasVertiBar, bool p_HasHoriBar)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_scroll_box_1a9e2d78a8b045d678e67bb026888a1012">
+                <title>void ScrollBox::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis></emphasis>
+                
+            </section>
+</section>

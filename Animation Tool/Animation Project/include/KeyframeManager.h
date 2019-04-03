@@ -13,7 +13,7 @@
 using namespace boost::container;
 
 /**
-* @class Keyframe manager
+* @class KeyframeManager
 * @brief Manages keyframe data for objects
 * Provides functionality to save, load, iterate and interpolate between keyframes
 */

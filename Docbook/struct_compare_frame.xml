@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_compare_frame">
+<title>CompareFrame struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_anim_structs_8h">&lt;AnimStructs.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void  <link linkend="struct_compare_frame_1a9ee39ccc90c3a72c8f91e338e594f5b8">is_transparent</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_frame_1a4a1d27b71a2080650af0f20dac2b8d68">operator()</link> (
+const <link linkend="struct_key_frame">KeyFrame</link> &amp; p_A, const <link linkend="struct_key_frame">KeyFrame</link> &amp; p_B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_frame_1aad891f00abf4c72b158028b5728f259d">operator()</link> (
+unsigned int p_Frame, const <link linkend="struct_key_frame">KeyFrame</link> &amp; p_ShapeKeyFrames)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_frame_1ae8814c26673640406f5989e92afc6a33">operator()</link> (
+const <link linkend="struct_key_frame">KeyFrame</link> &amp; p_ShapeKeyFrames, unsigned int p_Frame)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Comparator that orders frames via a the frame number. </para>
+    </simplesect>
+            <section xml:id="struct_compare_frame_1a9ee39ccc90c3a72c8f91e338e594f5b8">
+                <title>using CompareFrame::is_transparent =  void</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_frame_1a4a1d27b71a2080650af0f20dac2b8d68">
+                <title>bool CompareFrame::operator() (const KeyFrame &amp;p_A, const KeyFrame &amp;p_B) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_frame_1aad891f00abf4c72b158028b5728f259d">
+                <title>bool CompareFrame::operator() (unsigned int p_Frame, const KeyFrame &amp;p_ShapeKeyFrames) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_frame_1ae8814c26673640406f5989e92afc6a33">
+                <title>bool CompareFrame::operator() (const KeyFrame &amp;p_ShapeKeyFrames, unsigned int p_Frame) const</title> <emphasis></emphasis>
+                
+            </section>
+</section>

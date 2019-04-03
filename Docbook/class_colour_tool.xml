@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_colour_tool">
+<title>ColourTool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_colour_tool_8h">&lt;ColourTool.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ColourPanel * m_pColourPanel<para><emphasis>pointer to a colour panel that determines the colour to be used</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_colour_tool_1aaedac79d91816998884ea165f1b58da0">ColourTool</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>constructor that takes interactionPtrs that contains useful classes needed to recolour shapes</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_colour_tool_1a0820f49fb253ea9d657810a08ab48e5e">~ColourTool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_tool_1a8f6f08e54a1e074740aee812bbe54db0">Update</link> (
+float p_DeltaTime)<para><emphasis>Update method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_tool_1a2a499beddabdf11b1d982c68174df8ad">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>Callback method that is notified on a mouse button event.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_tool_1a02ad228f089cf99ba9f56b66f18de24b">OnMouseMove</link> (
+sf::Vector2i p_MouseWindowPos, sf::Vector2f p_MouseWorldPos)<para><emphasis>Callback method that is notified on a mouse move extra event.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_colour_tool_1a60f7a883b45ab06a0461988fa48e38d5">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>draw method that draws the colour panel</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Used as a simple temporary means to recolour shapes. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_colour_tool_1aaedac79d91816998884ea165f1b58da0">
+                <title>ColourTool::ColourTool (InteractionPtrs *p_pSP)</title> <emphasis>constructor that takes interactionPtrs that contains useful classes needed to recolour shapes</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_tool_1a0820f49fb253ea9d657810a08ab48e5e">
+                <title>ColourTool::~ColourTool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_colour_tool_1a8f6f08e54a1e074740aee812bbe54db0">
+                <title>void ColourTool::Update (float p_DeltaTime) override</title> <emphasis>Update method.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_tool_1a2a499beddabdf11b1d982c68174df8ad">
+                <title>void ColourTool::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState) override</title> <emphasis>Callback method that is notified on a mouse button event.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_tool_1a02ad228f089cf99ba9f56b66f18de24b">
+                <title>void ColourTool::OnMouseMove (sf::Vector2i p_MouseWindowPos, sf::Vector2f p_MouseWorldPos) override</title> <emphasis>Callback method that is notified on a mouse move extra event.</emphasis>
+                
+            </section>
+            <section xml:id="class_colour_tool_1a60f7a883b45ab06a0461988fa48e38d5">
+                <title>void ColourTool::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>draw method that draws the colour panel</emphasis>
+                
+            </section>
+</section>

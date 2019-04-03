@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_signal_8h">
+    <title>Signal.h File Reference</title>
+    <programlisting>#include &lt;functional&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;any&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_signal">Signal</link></para>
+<para><emphasis>Handles the connections of call back functions.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_signal_8h_1acce64924b686dd08a83042b35d0d1480">FUNC_PTR</link> std::function&lt;void(Args...)&gt;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_signal_8h_1aedcf5974c25b39d9631f19932dd35c4a">FUNC_PTR_ANY</link> std::function&lt;void(std::vector&lt;std::any&gt;)&gt;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/Signal.h</para>
+    </simplesect>
+</section>

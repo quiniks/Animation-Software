@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_transform_tool">
+<title>TransformTool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_transform_tool_8h">&lt;TransformTool.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Object * m_pSelectedObject<para><emphasis>The currently selectecd object.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_IDOfSelectedObject<para><emphasis>The ID of the selected object.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bScaling<para><emphasis>Is a scale operation being preformed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bTranslating<para><emphasis>Is a translation operation being preformed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bRotating<para><emphasis>Is a rotation operation being preformed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bMoveingOrigin<para><emphasis>Is a translation of the origin being performed.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_HandlesActive<para><emphasis>Are the transform handles active (visible)</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int m_iHandleNum<para><emphasis>Number of scale handles.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::CircleShape * m_ScaleHandles[8]<para><emphasis>Array of circle shapes that make of the scale handles.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_SelectedHandle<para><emphasis>The currently selected handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::CircleShape * m_OriginHandle<para><emphasis>The circle that makes the origin handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::CircleShape * m_RotateHandle<para><emphasis>The circle that makes the rotation handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MouseInitialPos<para><emphasis>The mouses initial position, used during transforms.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_ShapeInitialPos<para><emphasis>The shapes initial position, used during transforms.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_ShapeInitialRot<para><emphasis>The shapes initial rotation, used during rotations.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_DefaultCursor<para><emphasis>The default cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_MoveCursor<para><emphasis>The move cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_HandCursor<para><emphasis>The hand cursior.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_HoriCursor<para><emphasis>The horizontal move cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_VertCursor<para><emphasis>The vertical move cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_Diag1Cursor<para><emphasis>The 1st diagonal cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Cursor m_Diag2Cursor<para><emphasis>The 2nd diagonal cursor.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; unsigned int &gt; OnTransformEnd<para><emphasis>The signal for a transform ending.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1acb7b02b527cd39d9a9bd4d7bc1a809b9">CreateFrame</link> (
+)<para><emphasis>Method for creationg the transform handles.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1ab3818545f9e98e1b44c1c8ed6651885f">SetFrame</link> (
+)<para><emphasis>Method for setting the transform handles.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1a9696bb5c4ec77b661d91fd4a223c13fd">RemoveFrame</link> (
+)<para><emphasis>Method for removing the transform handles.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2i <link linkend="class_transform_tool_1aebb3c668d2dc68be46dd053315e51e8f">ToWindow</link> (
+sf::Vector2f p_Pos)<para><emphasis>Conversion function to convert from canvas coordinates to window position.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_transform_tool_1af4dfc85a678dacd21870721dce7a7f52">ToCanvas</link> (
+sf::Vector2i p_Pos)<para><emphasis>Conversion function to convert from window position to canvas coordinates.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_transform_tool_1a620e890542c846f0d6dc636e9b40ffc1">MiddleOf</link> (
+sf::Vector2f p_Pos1, sf::Vector2f p_Pos2)<para><emphasis>&quot;Middle of&quot; calculates the centre point between two points</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_transform_tool_1a0c5f3caf97efce149d18df2711512358">TransformTool</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Constructor that takes the interaction pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_transform_tool_1af9b78d3b43cf3e7a4d26f4ae8c02e0c5">~TransformTool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1aa830f478b61f8de80a6edc8ecb8f2f0d">Update</link> (
+float p_DeltaTime)<para><emphasis>Update method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1a4716a3bdf7c72190fa7a09f64a94d58f">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>Callback for mouse click event.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_transform_tool_1a342c8e953914bf6c97d70eb5aa0accef">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw method for drawing all the handles.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the interaction of transforming an object. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_transform_tool_1acb7b02b527cd39d9a9bd4d7bc1a809b9">
+                <title>void TransformTool::CreateFrame ()</title> <emphasis>Method for creationg the transform handles.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1ab3818545f9e98e1b44c1c8ed6651885f">
+                <title>void TransformTool::SetFrame ()</title> <emphasis>Method for setting the transform handles.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1a9696bb5c4ec77b661d91fd4a223c13fd">
+                <title>void TransformTool::RemoveFrame ()</title> <emphasis>Method for removing the transform handles.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1aebb3c668d2dc68be46dd053315e51e8f">
+                <title>sf::Vector2i TransformTool::ToWindow (sf::Vector2f p_Pos)</title> <emphasis>Conversion function to convert from canvas coordinates to window position.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1af4dfc85a678dacd21870721dce7a7f52">
+                <title>sf::Vector2f TransformTool::ToCanvas (sf::Vector2i p_Pos)</title> <emphasis>Conversion function to convert from window position to canvas coordinates.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1a620e890542c846f0d6dc636e9b40ffc1">
+                <title>sf::Vector2f TransformTool::MiddleOf (sf::Vector2f p_Pos1, sf::Vector2f p_Pos2)</title> <emphasis>&quot;Middle of&quot; calculates the centre point between two points</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1a0c5f3caf97efce149d18df2711512358">
+                <title>TransformTool::TransformTool (InteractionPtrs *p_pSP)</title> <emphasis>Constructor that takes the interaction pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1af9b78d3b43cf3e7a4d26f4ae8c02e0c5">
+                <title>TransformTool::~TransformTool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1aa830f478b61f8de80a6edc8ecb8f2f0d">
+                <title>void TransformTool::Update (float p_DeltaTime) override</title> <emphasis>Update method.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1a4716a3bdf7c72190fa7a09f64a94d58f">
+                <title>void TransformTool::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState) override</title> <emphasis>Callback for mouse click event.</emphasis>
+                
+            </section>
+            <section xml:id="class_transform_tool_1a342c8e953914bf6c97d70eb5aa0accef">
+                <title>void TransformTool::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw method for drawing all the handles.</emphasis>
+                
+            </section>
+</section>

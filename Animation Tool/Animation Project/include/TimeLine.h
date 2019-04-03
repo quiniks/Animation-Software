@@ -25,7 +25,7 @@ struct ShapeSlot {
 
 using namespace boost::container;
 /**
- * @class Time-line
+ * @class TimeLine
  * @brief Creates and manages a user interface to deal with "ShapeKeyFrame" data
  */
 class TimeLine : public sf::Drawable {

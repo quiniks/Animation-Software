@@ -1,0 +1,59 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+Handles a quadpart and polyshape to make up a more transformable object that just using an S\+F\+ML shape.  
+
+
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_ae240ad6fec4239f2d631cefacd7fd8dd}\label{class_object_ae240ad6fec4239f2d631cefacd7fd8dd}} 
+\hyperlink{class_object_ae240ad6fec4239f2d631cefacd7fd8dd}{Object} (Shape\+Type p\+\_\+e\+Shape\+Type)
+\begin{DoxyCompactList}\small\item\em Constructor that takes just a shape type enum. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_ae525cdbb73d2ca88dd5c9422405744d4}\label{class_object_ae525cdbb73d2ca88dd5c9422405744d4}} 
+\hyperlink{class_object_ae525cdbb73d2ca88dd5c9422405744d4}{Object} (Shape\+Type p\+\_\+e\+Shape\+Type, sf\+::\+Vector2f p\+\_\+\+Pos, sf\+::\+Vector2f p\+\_\+\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor that thake shape type, position and size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_a50cf60a49f4c109a63b8ba2a802d24c3}\label{class_object_a50cf60a49f4c109a63b8ba2a802d24c3}} 
+\hyperlink{class_object_a50cf60a49f4c109a63b8ba2a802d24c3}{Object} (Shape\+Type p\+\_\+e\+Shape\+Type, sf\+::\+Vector2f p\+\_\+\+Pos, sf\+::\+Vector2f p\+\_\+\+Size, unsigned int p\+\_\+ui\+Point\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor that takes shape type, position, size and point count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_adec6108282a005f78653c7b53931167f}\label{class_object_adec6108282a005f78653c7b53931167f}} 
+\hyperlink{class_object_adec6108282a005f78653c7b53931167f}{Object} (const \hyperlink{class_object}{Object} \&p\+\_\+\+Other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_object}{Object} copy constructor overload. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_aa904f948ec72f2cbec99a9eee5ed387e}\label{class_object_aa904f948ec72f2cbec99a9eee5ed387e}} 
+void \hyperlink{class_object_aa904f948ec72f2cbec99a9eee5ed387e}{operator=} (const \hyperlink{class_object}{Object} \&p\+\_\+\+Other)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_object}{Object} assignment operator overload that prevents polyshape becoming invalid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_a94582e86bced7fdfebc0d419a2012272}\label{class_object_a94582e86bced7fdfebc0d419a2012272}} 
+void \hyperlink{class_object_a94582e86bced7fdfebc0d419a2012272}{Update\+Shape} ()
+\begin{DoxyCompactList}\small\item\em Update the polyshape to match the quadpart shape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_a6c3dc18899c7d428b35b88b1474778d0}\label{class_object_a6c3dc18899c7d428b35b88b1474778d0}} 
+void \hyperlink{class_object_a6c3dc18899c7d428b35b88b1474778d0}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw the polyshape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_a6f8024417f011eba14377d64b39baad4}\label{class_object_a6f8024417f011eba14377d64b39baad4}} 
+sf\+::\+Shape $\ast$ \hyperlink{class_object_a6f8024417f011eba14377d64b39baad4}{m\+\_\+p\+Poly\+Shape}
+\begin{DoxyCompactList}\small\item\em The polymorphic sfml shape pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_object_a90cb6e9ab5acccc06a2fa2bbc9ccf793}\label{class_object_a90cb6e9ab5acccc06a2fa2bbc9ccf793}} 
+std\+::string \hyperlink{class_object_a90cb6e9ab5acccc06a2fa2bbc9ccf793}{m\+\_\+\+Name}
+\begin{DoxyCompactList}\small\item\em Name associated with this object (not yet used) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handles a quadpart and polyshape to make up a more transformable object that just using an S\+F\+ML shape. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Object.\+h\end{DoxyCompactItemize}

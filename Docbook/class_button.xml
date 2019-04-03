@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_button">
+<title>Button class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_button_8h">&lt;Button.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_isOver<para><emphasis>Is the mouse over this button.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal onClicked<para><emphasis>Signal that the button has been clicked.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; bool &gt; onAnyButtonOver<para><emphasis>Redundant signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_button_1ab1efa067f59ac17af501ba523527cee6">Button</link> (
+std::string p_SignalName, std::string p_IconFilePath, const sf::Vector2f &amp; p_Pos, const sf::Vector2f &amp; p_Size)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_button_1acf51cb6628e0a1fd57d07201634ca859">OnMouseClick</link> (
+bool p_State)<para><emphasis>Callback for mouse click events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_button_1a542274c2ff280252d8694e62d269da40">OnMouseMove</link> (
+sf::Vector2i p_Pos)<para><emphasis>Callback for mouse move events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>A class that creates an easy to use button. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_button_1ab1efa067f59ac17af501ba523527cee6">
+                <title>Button::Button (std::string p_SignalName, std::string p_IconFilePath, const sf::Vector2f &amp;p_Pos, const sf::Vector2f &amp;p_Size)</title> <emphasis>Constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_button_1acf51cb6628e0a1fd57d07201634ca859">
+                <title>void Button::OnMouseClick (bool p_State)</title> <emphasis>Callback for mouse click events.</emphasis>
+                
+            </section>
+            <section xml:id="class_button_1a542274c2ff280252d8694e62d269da40">
+                <title>void Button::OnMouseMove (sf::Vector2i p_Pos)</title> <emphasis>Callback for mouse move events.</emphasis>
+                
+            </section>
+</section>

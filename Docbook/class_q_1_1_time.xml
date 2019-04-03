@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_q_1_1_time">
+<title>Q::Time class Reference</title>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double m_Seconds</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_Minutes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_Hours</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_q_1_1_time_1ad7b15d529a5b10cf25ae6092ee8ab723">Time</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_q_1_1_time_1ac72848b1ffb63c184cd312738b5cc2ed">Time</link> (
+unsigned int p_Hours, unsigned int p_Minutes, double p_Seconds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double <link linkend="class_q_1_1_time_1a2bcb2fc8b2101517aa5b2409b86963a6">GetSeconds</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_q_1_1_time_1adade232803ba1570d53182c997829d1c">GetMinutes</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_q_1_1_time_1a9000bbd6010a5c20f5c9d0f1bca7bbf8">GetHours</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_q_1_1_time_1a075ce41503d52f7939616eca06cbcfbf">SetSeconds</link> (
+double p_Seconds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_q_1_1_time_1a5e95992d560c4dacbde1b97135e43104">SetMinutes</link> (
+unsigned int p_Minutes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_q_1_1_time_1a70ef5e519c1ef050a4d1f37a192177c0">SetHours</link> (
+unsigned int p_Hours)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_q_1_1_time_1ad7b15d529a5b10cf25ae6092ee8ab723">
+                <title>Q::Time::Time ()=default</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1ac72848b1ffb63c184cd312738b5cc2ed">
+                <title>Q::Time::Time (unsigned int p_Hours, unsigned int p_Minutes, double p_Seconds)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1a2bcb2fc8b2101517aa5b2409b86963a6">
+                <title>double Q::Time::GetSeconds ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1adade232803ba1570d53182c997829d1c">
+                <title>int Q::Time::GetMinutes ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1a9000bbd6010a5c20f5c9d0f1bca7bbf8">
+                <title>int Q::Time::GetHours ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1a075ce41503d52f7939616eca06cbcfbf">
+                <title>void Q::Time::SetSeconds (double p_Seconds)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1a5e95992d560c4dacbde1b97135e43104">
+                <title>void Q::Time::SetMinutes (unsigned int p_Minutes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_q_1_1_time_1a70ef5e519c1ef050a4d1f37a192177c0">
+                <title>void Q::Time::SetHours (unsigned int p_Hours)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

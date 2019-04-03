@@ -1,0 +1,49 @@
+\hypertarget{class_time_line}{}\section{Time\+Line Class Reference}
+\label{class_time_line}\index{Time\+Line@{Time\+Line}}
+
+
+Creates and manages a user interface to deal with \char`\"{}\+Shape\+Key\+Frame\char`\"{} data.  
+
+
+
+
+{\ttfamily \#include $<$Time\+Line.\+h$>$}
+
+Inheritance diagram for Time\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_time_line}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_time_line_a48cda2f285f06a06211724178d01383d}\label{class_time_line_a48cda2f285f06a06211724178d01383d}} 
+\hyperlink{class_time_line_a48cda2f285f06a06211724178d01383d}{Time\+Line} (sf\+::\+Vector2f p\+\_\+\+Pos, sf\+::\+Vector2f p\+\_\+\+Size, unsigned int p\+\_\+\+Frame\+Rate, unsigned int p\+\_\+\+Total\+Frames)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_time_line_abd8b8a4340ad3dda404a7b48d5b1e0f9}\label{class_time_line_abd8b8a4340ad3dda404a7b48d5b1e0f9}} 
+void \hyperlink{class_time_line_abd8b8a4340ad3dda404a7b48d5b1e0f9}{Update} (const flat\+\_\+set$<$ \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames}, \hyperlink{struct_compare_id}{Compare\+Id} $>$ \&p\+\_\+\+Shapes\+And\+Keys, Frame\+State p\+\_\+\+Frame\+State)
+\begin{DoxyCompactList}\small\item\em Update the shape and frame slots with the keyframe data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_time_line_a5792226d36ccba7466e7f2986fd0702a}\label{class_time_line_a5792226d36ccba7466e7f2986fd0702a}} 
+void \hyperlink{class_time_line_a5792226d36ccba7466e7f2986fd0702a}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em draw the the UI \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_time_line_a280a51390bb34ebe26a434b871f81add}\label{class_time_line_a280a51390bb34ebe26a434b871f81add}} 
+void \hyperlink{class_time_line_a280a51390bb34ebe26a434b871f81add}{On\+Mouse\+Click} (bool p\+\_\+\+State)
+\begin{DoxyCompactList}\small\item\em callback for mouse click \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_time_line_a30ecec78f9815577bd56715ba697e7c6}\label{class_time_line_a30ecec78f9815577bd56715ba697e7c6}} 
+void \hyperlink{class_time_line_a30ecec78f9815577bd56715ba697e7c6}{On\+Mouse\+Move} (sf\+::\+Vector2i p\+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em callback for mouse move \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_time_line_a250b77331838512edd9656bf12169e9d}\label{class_time_line_a250b77331838512edd9656bf12169e9d}} 
+\hyperlink{class_signal}{Signal}$<$ unsigned int $>$ \hyperlink{class_time_line_a250b77331838512edd9656bf12169e9d}{Set\+Key\+Frame}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_signal}{Signal} for keyframe being set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates and manages a user interface to deal with \char`\"{}\+Shape\+Key\+Frame\char`\"{} data. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Time\+Line.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_interpolation_helper">
+<title>InterpolationHelper class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_interpolation_helper_8h">&lt;InterpolationHelper.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f <link linkend="class_interpolation_helper_1aa2fba4f6c109fd6541e9fce8729d469f">Linear</link> (
+float p_Progress, sf::Vector2f p_Prev, sf::Vector2f )<para><emphasis>Linear interpolation solver.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Contains methods for interplating between two positions. </para>
+    </simplesect>
+            <section xml:id="class_interpolation_helper_1aa2fba4f6c109fd6541e9fce8729d469f">
+                <title>sf::Vector2f InterpolationHelper::Linear (float p_Progress, sf::Vector2f p_Prev, sf::Vector2f)</title> <emphasis>Linear interpolation solver.</emphasis>
+                
+            </section>
+</section>

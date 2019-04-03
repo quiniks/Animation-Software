@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_object">
+<title>Object class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_object_8h">&lt;Object.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ShapeType m_Type<para><emphasis>Shape type enum used to recast the polyshape for transformations.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Shape * m_pPolyShape<para><emphasis>The polymorphic sfml shape pointer.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string m_Name<para><emphasis>Name associated with this object (not yet used)</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_object_1a75ef7d77455fd7f5c94c5705cf956c9c">CreateShape</link> (
+ShapeType p_eShapeType, unsigned int p_uiPointCount)<para><emphasis>Create shape method creates the polyshape based on a given shape type enum and pointcount.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_object_1ae240ad6fec4239f2d631cefacd7fd8dd">Object</link> (
+ShapeType p_eShapeType)<para><emphasis>Constructor that takes just a shape type enum.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_object_1ae525cdbb73d2ca88dd5c9422405744d4">Object</link> (
+ShapeType p_eShapeType, sf::Vector2f p_Pos, sf::Vector2f p_Size)<para><emphasis>Constructor that thake shape type, position and size.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_object_1a50cf60a49f4c109a63b8ba2a802d24c3">Object</link> (
+ShapeType p_eShapeType, sf::Vector2f p_Pos, sf::Vector2f p_Size, unsigned int p_uiPointCount)<para><emphasis>Constructor that takes shape type, position, size and point count.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_object_1ae8f5483f459e46687bd01e6f9977afd3">~Object</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_object_1adec6108282a005f78653c7b53931167f">Object</link> (
+const <link linkend="class_object">Object</link> &amp; p_Other)<para><emphasis>Object copy constructor overload.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_object_1aa904f948ec72f2cbec99a9eee5ed387e">operator=</link> (
+const <link linkend="class_object">Object</link> &amp; p_Other)<para><emphasis>Object assignment operator overload that prevents polyshape becoming invalid.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_object_1a94582e86bced7fdfebc0d419a2012272">UpdateShape</link> (
+)<para><emphasis>Update the polyshape to match the quadpart shape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_object_1a6c3dc18899c7d428b35b88b1474778d0">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw the polyshape.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles a quadpart and polyshape to make up a more transformable object that just using an SFML shape. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_object_1a75ef7d77455fd7f5c94c5705cf956c9c">
+                <title>void Object::CreateShape (ShapeType p_eShapeType, unsigned int p_uiPointCount)</title> <emphasis>Create shape method creates the polyshape based on a given shape type enum and pointcount.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1ae240ad6fec4239f2d631cefacd7fd8dd">
+                <title>Object::Object (ShapeType p_eShapeType)</title> <emphasis>Constructor that takes just a shape type enum.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1ae525cdbb73d2ca88dd5c9422405744d4">
+                <title>Object::Object (ShapeType p_eShapeType, sf::Vector2f p_Pos, sf::Vector2f p_Size)</title> <emphasis>Constructor that thake shape type, position and size.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1a50cf60a49f4c109a63b8ba2a802d24c3">
+                <title>Object::Object (ShapeType p_eShapeType, sf::Vector2f p_Pos, sf::Vector2f p_Size, unsigned int p_uiPointCount)</title> <emphasis>Constructor that takes shape type, position, size and point count.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1ae8f5483f459e46687bd01e6f9977afd3">
+                <title>Object::~Object ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_object_1adec6108282a005f78653c7b53931167f">
+                <title>Object::Object (const Object &amp;p_Other)</title> <emphasis>Object copy constructor overload.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1aa904f948ec72f2cbec99a9eee5ed387e">
+                <title>void Object::operator= (const Object &amp;p_Other)</title> <emphasis>Object assignment operator overload that prevents polyshape becoming invalid.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1a94582e86bced7fdfebc0d419a2012272">
+                <title>void Object::UpdateShape ()</title> <emphasis>Update the polyshape to match the quadpart shape.</emphasis>
+                
+            </section>
+            <section xml:id="class_object_1a6c3dc18899c7d428b35b88b1474778d0">
+                <title>void Object::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw the polyshape.</emphasis>
+                
+            </section>
+</section>

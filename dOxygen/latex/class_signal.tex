@@ -1,0 +1,46 @@
+\hypertarget{class_signal}{}\section{Signal$<$ Args $>$ Class Template Reference}
+\label{class_signal}\index{Signal$<$ Args $>$@{Signal$<$ Args $>$}}
+
+
+Handles the connections of call back functions.  
+
+
+
+
+{\ttfamily \#include $<$Signal.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_signal_a3437b8fd65f60a38d45d4d92349dd544}\label{class_signal_a3437b8fd65f60a38d45d4d92349dd544}} 
+\hyperlink{class_signal_a3437b8fd65f60a38d45d4d92349dd544}{Signal} ()
+\begin{DoxyCompactList}\small\item\em Constructor sets the ID to 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_a249b93a84b73e8bda0373f6595e6724f}\label{class_signal_a249b93a84b73e8bda0373f6595e6724f}} 
+\hyperlink{class_signal_a249b93a84b73e8bda0373f6595e6724f}{Signal} (\hyperlink{class_signal}{Signal} const \&p\+\_\+\+Signal)
+\begin{DoxyCompactList}\small\item\em Copy constructor makes sure the ID is still 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_a3ddf10ab607a60af919faa9494836e9e}\label{class_signal_a3ddf10ab607a60af919faa9494836e9e}} 
+int \hyperlink{class_signal_a3ddf10ab607a60af919faa9494836e9e}{Connect} (F\+U\+N\+C\+\_\+\+P\+TR const \&p\+\_\+\+Listener) const
+\begin{DoxyCompactList}\small\item\em Connection method takes a std\+::functional function pointer and emplaces it to the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_a7fe765fc1c513307fd7ae28f0f907f0d}\label{class_signal_a7fe765fc1c513307fd7ae28f0f907f0d}} 
+void \hyperlink{class_signal_a7fe765fc1c513307fd7ae28f0f907f0d}{Disconnect} (int p\+\_\+\+ID) const
+\begin{DoxyCompactList}\small\item\em Disconnect method erases a callback with ID p\+\_\+\+ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_a84a53c35c242b67e1e6fbb3d1545eed8}\label{class_signal_a84a53c35c242b67e1e6fbb3d1545eed8}} 
+void \hyperlink{class_signal_a84a53c35c242b67e1e6fbb3d1545eed8}{Disconect\+All} () const
+\begin{DoxyCompactList}\small\item\em Disconnect all callback functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_a3e5a119b3f1946bdd722518039d4f36d}\label{class_signal_a3e5a119b3f1946bdd722518039d4f36d}} 
+void \hyperlink{class_signal_a3e5a119b3f1946bdd722518039d4f36d}{Notify} (Args... p\+\_\+\+Args)
+\begin{DoxyCompactList}\small\item\em Calls and passes the given arguments to all callback functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_signal_ae06f307f87638c3d59a8453bf9031fec}\label{class_signal_ae06f307f87638c3d59a8453bf9031fec}} 
+\hyperlink{class_signal}{Signal} \& \hyperlink{class_signal_ae06f307f87638c3d59a8453bf9031fec}{operator=} (\hyperlink{class_signal}{Signal} const \&p\+\_\+\+Signal)
+\begin{DoxyCompactList}\small\item\em Overloaded assignment operator disconnects all callbacks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename... Args$>$\newline
+class Signal$<$ Args $>$}
+
+Handles the connections of call back functions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Signal.\+h\end{DoxyCompactItemize}

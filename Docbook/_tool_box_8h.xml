@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tool_box_8h">
+    <title>ToolBox.h File Reference</title>
+    <programlisting>#include &lt;SFML/Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &quot;InteractionPtrs.h&quot;</programlisting>
+    <programlisting>#include &lt;ShapeTool.h&gt;</programlisting>
+    <programlisting>#include &lt;TransformTool.h&gt;</programlisting>
+    <programlisting>#include &lt;ColourTool.h&gt;</programlisting>
+    <programlisting>#include &quot;JointTool.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_tool_box">ToolBox</link></para>
+<para><emphasis>Handles the creation and switching of tools.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/ToolBox.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_time_line_8h">
+    <title>TimeLine.h File Reference</title>
+    <programlisting>#include &lt;SFML/Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &quot;Enums.h&quot;</programlisting>
+    <programlisting>#include &quot;EventHandler.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;iomanip&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &quot;AnimStructs.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_frame_slot">FrameSlot</link></para>
+<para><emphasis>Struct that holds data for frame slots.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_shape_slot">ShapeSlot</link></para>
+<para><emphasis>Struct that holds data for shape slots and their corrisponding frame slots.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_time_line">TimeLine</link></para>
+<para><emphasis>Creates and manages a user interface to deal with &quot;ShapeKeyFrame&quot; data.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/TimeLine.h</para>
+    </simplesect>
+</section>

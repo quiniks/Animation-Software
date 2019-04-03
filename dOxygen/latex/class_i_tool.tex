@@ -1,0 +1,61 @@
+\hypertarget{class_i_tool}{}\section{I\+Tool Class Reference}
+\label{class_i_tool}\index{I\+Tool@{I\+Tool}}
+
+
+handles generic methods that tools might need to use  
+
+
+
+
+{\ttfamily \#include $<$I\+Tool.\+h$>$}
+
+Inheritance diagram for I\+Tool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_tool}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tool_aaee4d261cdadf0bab515ae3d0ad9fe86}\label{class_i_tool_aaee4d261cdadf0bab515ae3d0ad9fe86}} 
+virtual void \hyperlink{class_i_tool_aaee4d261cdadf0bab515ae3d0ad9fe86}{Update} (float p\+\_\+\+Delta\+Time)=0
+\begin{DoxyCompactList}\small\item\em Update method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_tool_a1af006baeba70bb9d2a77655e5f43827}\label{class_i_tool_a1af006baeba70bb9d2a77655e5f43827}} 
+virtual void \hyperlink{class_i_tool_a1af006baeba70bb9d2a77655e5f43827}{On\+Mouse\+Click} (sf\+::\+Mouse\+::\+Button p\+\_\+\+Button, bool p\+\_\+b\+State)
+\begin{DoxyCompactList}\small\item\em Callback for mouse click events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_tool_a650ec05672cd537ef7fd68f220fa9569}\label{class_i_tool_a650ec05672cd537ef7fd68f220fa9569}} 
+virtual void \hyperlink{class_i_tool_a650ec05672cd537ef7fd68f220fa9569}{On\+Mouse\+Move} (sf\+::\+Vector2i p\+\_\+\+Mouse\+Window\+Pos, sf\+::\+Vector2f p\+\_\+\+Mouse\+Canvas\+Pos)
+\begin{DoxyCompactList}\small\item\em callback for mouse move events \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_tool_aa48cc732ed27ccbbaf4731aee956e959}\label{class_i_tool_aa48cc732ed27ccbbaf4731aee956e959}} 
+virtual void \hyperlink{class_i_tool_aa48cc732ed27ccbbaf4731aee956e959}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em draw method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tool_a899ebf4a35a3ba0d6933db8e07f075bc}\label{class_i_tool_a899ebf4a35a3ba0d6933db8e07f075bc}} 
+bool \hyperlink{class_i_tool_a899ebf4a35a3ba0d6933db8e07f075bc}{m\+\_\+\+Active} = false
+\begin{DoxyCompactList}\small\item\em Is the tool active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tool_a79901d47b06c21ac66ae4b5dea63a72d}\label{class_i_tool_a79901d47b06c21ac66ae4b5dea63a72d}} 
+\hyperlink{class_i_tool_a79901d47b06c21ac66ae4b5dea63a72d}{I\+Tool} (\hyperlink{struct_interaction_ptrs}{Interaction\+Ptrs} $\ast$p\+\_\+p\+SP)
+\begin{DoxyCompactList}\small\item\em Constructor handles the inraction pointer giving it to the constructor of \hyperlink{class_has_interaction_ptrs}{Has\+Interaction\+Ptrs}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tool_af99caebe9dc3aa965571408f20be0749}\label{class_i_tool_af99caebe9dc3aa965571408f20be0749}} 
+sf\+::\+Vector2f \hyperlink{class_i_tool_af99caebe9dc3aa965571408f20be0749}{m\+\_\+\+Mouse\+Canvas\+Pos}
+\begin{DoxyCompactList}\small\item\em The mouse position on the canvas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_tool_a5231eb512a418f4e621f23d0c7fb4c6e}\label{class_i_tool_a5231eb512a418f4e621f23d0c7fb4c6e}} 
+sf\+::\+Vector2i \hyperlink{class_i_tool_a5231eb512a418f4e621f23d0c7fb4c6e}{m\+\_\+\+Mouse\+Window\+Pos}
+\begin{DoxyCompactList}\small\item\em The mouse position on the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+handles generic methods that tools might need to use 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/I\+Tool.\+h\end{DoxyCompactItemize}

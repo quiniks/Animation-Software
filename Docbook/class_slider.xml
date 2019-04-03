@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_slider">
+<title>Slider class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_slider_8h">&lt;Slider.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_Sliding<para><emphasis>Is the slider being used.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_SliderBar<para><emphasis>The rectangle used as the slider bar.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_SliderHandle<para><emphasis>The ractangle used as the slider&apos;s handle.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MousePos<para><emphasis>The mouse position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_slider_1a2c2ff6bc7705ba9ea4f5c597dae66419">isOver</link> (
+sf::Vector2f p_MousePos)<para><emphasis>Is the mouse over the slider&apos;s handles.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_slider_1a535033fada8e25ef7291d2a52e6e437b">Slider</link> (
+)<para><emphasis>constructor</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_slider_1a94344aa7908201fb6caa76d39f8bde88">Slider</link> (
+sf::Vector2f p_Pos, float p_Length)<para><emphasis>constructor that takes position and length</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_slider_1a0573daabd36577e4ed2364352e375c22">HandleMouseInput</link> (
+sf::Mouse::Button p_Button, bool p_State)<para><emphasis>Callback that handles the mouse button events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_slider_1aeb1da2f98fcc1ccdd71703b7e23181c7">HandleMouseMove</link> (
+sf::Vector2i l_MousePos)<para><emphasis>Callback that handles the mouse move events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_slider_1a1e57a096aedaaa37030a85aeb4e7302f">SetLength</link> (
+float p_Length)<para><emphasis>Length of the slider setter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_slider_1a1d3ab32779278798ccb2410648282036">setPosition</link> (
+sf::Vector2f p_Pos)<para><emphasis>Position setter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="class_slider_1ab49809e3c428a3c3783efd49a148c6f7">getPercent</link> (
+)<para><emphasis>Percentage that the bar has progress getter.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_slider_1aab959e9d386bd5e6f7953ad11cbd49f6">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw method draws the UI.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Used to create a very simple slider. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_slider_1a2c2ff6bc7705ba9ea4f5c597dae66419">
+                <title>bool Slider::isOver (sf::Vector2f p_MousePos)</title> <emphasis>Is the mouse over the slider&apos;s handles.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1a535033fada8e25ef7291d2a52e6e437b">
+                <title>Slider::Slider ()</title> <emphasis>constructor</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1a94344aa7908201fb6caa76d39f8bde88">
+                <title>Slider::Slider (sf::Vector2f p_Pos, float p_Length)</title> <emphasis>constructor that takes position and length</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1a0573daabd36577e4ed2364352e375c22">
+                <title>void Slider::HandleMouseInput (sf::Mouse::Button p_Button, bool p_State)</title> <emphasis>Callback that handles the mouse button events.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1aeb1da2f98fcc1ccdd71703b7e23181c7">
+                <title>void Slider::HandleMouseMove (sf::Vector2i l_MousePos)</title> <emphasis>Callback that handles the mouse move events.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1a1e57a096aedaaa37030a85aeb4e7302f">
+                <title>void Slider::SetLength (float p_Length)</title> <emphasis>Length of the slider setter.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1a1d3ab32779278798ccb2410648282036">
+                <title>void Slider::setPosition (sf::Vector2f p_Pos)</title> <emphasis>Position setter.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1ab49809e3c428a3c3783efd49a148c6f7">
+                <title>float Slider::getPercent ()</title> <emphasis>Percentage that the bar has progress getter.</emphasis>
+                
+            </section>
+            <section xml:id="class_slider_1aab959e9d386bd5e6f7953ad11cbd49f6">
+                <title>void Slider::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw method draws the UI.</emphasis>
+                
+            </section>
+</section>

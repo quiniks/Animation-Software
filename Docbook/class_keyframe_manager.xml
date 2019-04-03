@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_keyframe_manager">
+<title>KeyframeManager class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_keyframe_manager_8h">&lt;KeyframeManager.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AnimState m_State<para><emphasis>State of the animation i.e. is playing or is stopped.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::chrono::duration&lt; double &gt; m_SecondLimit<para><emphasis>Limiter for elapsed time to prevent large jumps in time due to long computation times.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::chrono::duration&lt; double &gt; m_Accumulator<para><emphasis>The accumulated time every iteration.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::chrono::time_point&lt; std::chrono::system_clock &gt; m_PreviousTime<para><emphasis>The time of the previous iteration.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::chrono::duration&lt; double &gt; m_FramePeriod<para><emphasis>Frame period is the time between each frame.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::chrono::duration&lt; double &gt; m_AnimationTime<para><emphasis>The run-time of the animation.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_TotalFrames<para><emphasis>The total frames in the animation.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_CurrentFrame<para><emphasis>The current frame number.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shapes * m_Shapes<para><emphasis>Pointer to the shapes manager.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>flat_set&lt; ShapeKeyFrames, CompareId &gt; m_ShapesAndKeys<para><emphasis>A vector based set for very fast search and iteration for a slow insertion and deletion.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InterpolationHelper m_InterpolationHelper<para><emphasis>A helper class that can do interpolation calculations.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; const flat_set&lt; ShapeKeyFrames, CompareId &gt; &amp;, FrameState &gt; OnUpdate<para><emphasis>Signal that gives out the animation data to anything that needs it.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_adj_key_frame_data">AdjKeyFrameData</link> <link linkend="class_keyframe_manager_1aa123d78e210b644a145901478ccdda1f">GetAdjKeyFrameData</link> (
+unsigned int p_ID)<para><emphasis>Method for determining the closest keyframes adjacent of the current frame number.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_keyframe_manager_1aeb89db344dcdca1c212b8e9f8d75a024">KeyframeManager</link> (
+unsigned int p_FrameRate, double p_AnimationTime, <link linkend="class_shapes">Shapes</link> * p_Shapes)<para><emphasis>Constructor that takes framerate, runtime and a pointer to the shapes manager.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_keyframe_manager_1a6a8c1fc77979df9d58fe5ec7e671614a">~KeyframeManager</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1a53c98866dce1a595c6e289e028234e99">RecordKeyframe</link> (
+unsigned int p_ID)<para><emphasis>Record a keyframe at the current frame number for shape with given ID.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1acfa120e0e5ea6df1724c4191bf32c503">DeleteKeyframe</link> (
+unsigned int p_ID, unsigned int p_FrameNumber)<para><emphasis>Delete the keyframe of shape with ID at frame p_FrameNumber.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1a6dd869e79b4e4be340abf62db07c21ae">SetCurrentFrame</link> (
+unsigned int p_FrameNumber)<para><emphasis>Sets the current frame to p_FrameNumber and places shapes at their interpolated positions.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1a38d18fb54e65492a3682b865c3cf6b53">Play</link> (
+)<para><emphasis>Sets the animation state to playing.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1a2ca51f9d58c2c346b5cda13ab13f3675">Stop</link> (
+)<para><emphasis>Sets the animation state to stopped.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_keyframe_manager_1affb43ea87dcd581a8938238e275cf1bf">Update</link> (
+)<para><emphasis>Updates the animation by calling &quot;SetCurrentFrame&quot; every update frame if the animation state is set to &quot;Playing&quot;.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int <link linkend="class_keyframe_manager_1ac94f8f3d7a9c65ee226df806e81d0a90">GetTotalFrames</link> (
+)<para><emphasis>Returns the total frame number.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int <link linkend="class_keyframe_manager_1a5aa8a4aba82178223ab869ff3bad0dd3">GetCurrentFrame</link> (
+)<para><emphasis>Returns the current frame number.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Manages keyframe data for objects Provides functionality to save, load, iterate and interpolate between keyframes. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_keyframe_manager_1aa123d78e210b644a145901478ccdda1f">
+                <title>AdjKeyFrameData KeyframeManager::GetAdjKeyFrameData (unsigned int p_ID)</title> <emphasis>Method for determining the closest keyframes adjacent of the current frame number.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1aeb89db344dcdca1c212b8e9f8d75a024">
+                <title>KeyframeManager::KeyframeManager (unsigned int p_FrameRate, double p_AnimationTime, Shapes *p_Shapes)</title> <emphasis>Constructor that takes framerate, runtime and a pointer to the shapes manager.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a6a8c1fc77979df9d58fe5ec7e671614a">
+                <title>KeyframeManager::~KeyframeManager ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a53c98866dce1a595c6e289e028234e99">
+                <title>void KeyframeManager::RecordKeyframe (unsigned int p_ID)</title> <emphasis>Record a keyframe at the current frame number for shape with given ID.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1acfa120e0e5ea6df1724c4191bf32c503">
+                <title>void KeyframeManager::DeleteKeyframe (unsigned int p_ID, unsigned int p_FrameNumber)</title> <emphasis>Delete the keyframe of shape with ID at frame p_FrameNumber.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a6dd869e79b4e4be340abf62db07c21ae">
+                <title>void KeyframeManager::SetCurrentFrame (unsigned int p_FrameNumber)</title> <emphasis>Sets the current frame to p_FrameNumber and places shapes at their interpolated positions.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a38d18fb54e65492a3682b865c3cf6b53">
+                <title>void KeyframeManager::Play ()</title> <emphasis>Sets the animation state to playing.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a2ca51f9d58c2c346b5cda13ab13f3675">
+                <title>void KeyframeManager::Stop ()</title> <emphasis>Sets the animation state to stopped.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1affb43ea87dcd581a8938238e275cf1bf">
+                <title>void KeyframeManager::Update ()</title> <emphasis>Updates the animation by calling &quot;SetCurrentFrame&quot; every update frame if the animation state is set to &quot;Playing&quot;.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1ac94f8f3d7a9c65ee226df806e81d0a90">
+                <title>unsigned int KeyframeManager::GetTotalFrames ()</title> <emphasis>Returns the total frame number.</emphasis>
+                
+            </section>
+            <section xml:id="class_keyframe_manager_1a5aa8a4aba82178223ab869ff3bad0dd3">
+                <title>unsigned int KeyframeManager::GetCurrentFrame ()</title> <emphasis>Returns the current frame number.</emphasis>
+                
+            </section>
+</section>

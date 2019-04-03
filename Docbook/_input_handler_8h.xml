@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_input_handler_8h">
+    <title>InputHandler.h File Reference</title>
+    <programlisting>#include &lt;SFML/Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &quot;EventHandler.h&quot;</programlisting>
+    <programlisting>#include &quot;Signal.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_s_f_m_l_input_handler">SFMLInputHandler</link></para>
+<para><emphasis>Class that manages SFML&apos;s input events and notifies thier corresponding signals.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/InputHandler.h</para>
+    </simplesect>
+</section>

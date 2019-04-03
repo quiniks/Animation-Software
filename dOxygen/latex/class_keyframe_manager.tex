@@ -1,0 +1,55 @@
+\hypertarget{class_keyframe_manager}{}\section{Keyframe\+Manager Class Reference}
+\label{class_keyframe_manager}\index{Keyframe\+Manager@{Keyframe\+Manager}}
+
+
+Manages keyframe data for objects Provides functionality to save, load, iterate and interpolate between keyframes.  
+
+
+
+
+{\ttfamily \#include $<$Keyframe\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_keyframe_manager_aeb89db344dcdca1c212b8e9f8d75a024}\label{class_keyframe_manager_aeb89db344dcdca1c212b8e9f8d75a024}} 
+\hyperlink{class_keyframe_manager_aeb89db344dcdca1c212b8e9f8d75a024}{Keyframe\+Manager} (unsigned int p\+\_\+\+Frame\+Rate, double p\+\_\+\+Animation\+Time, \hyperlink{class_shapes}{Shapes} $\ast$p\+\_\+\+Shapes)
+\begin{DoxyCompactList}\small\item\em Constructor that takes framerate, runtime and a pointer to the shapes manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_a53c98866dce1a595c6e289e028234e99}\label{class_keyframe_manager_a53c98866dce1a595c6e289e028234e99}} 
+void \hyperlink{class_keyframe_manager_a53c98866dce1a595c6e289e028234e99}{Record\+Keyframe} (unsigned int p\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Record a keyframe at the current frame number for shape with given ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_acfa120e0e5ea6df1724c4191bf32c503}\label{class_keyframe_manager_acfa120e0e5ea6df1724c4191bf32c503}} 
+void \hyperlink{class_keyframe_manager_acfa120e0e5ea6df1724c4191bf32c503}{Delete\+Keyframe} (unsigned int p\+\_\+\+ID, unsigned int p\+\_\+\+Frame\+Number)
+\begin{DoxyCompactList}\small\item\em Delete the keyframe of shape with ID at frame p\+\_\+\+Frame\+Number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_a6dd869e79b4e4be340abf62db07c21ae}\label{class_keyframe_manager_a6dd869e79b4e4be340abf62db07c21ae}} 
+void \hyperlink{class_keyframe_manager_a6dd869e79b4e4be340abf62db07c21ae}{Set\+Current\+Frame} (unsigned int p\+\_\+\+Frame\+Number)
+\begin{DoxyCompactList}\small\item\em Sets the current frame to p\+\_\+\+Frame\+Number and places shapes at their interpolated positions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_a38d18fb54e65492a3682b865c3cf6b53}\label{class_keyframe_manager_a38d18fb54e65492a3682b865c3cf6b53}} 
+void \hyperlink{class_keyframe_manager_a38d18fb54e65492a3682b865c3cf6b53}{Play} ()
+\begin{DoxyCompactList}\small\item\em Sets the animation state to playing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_a2ca51f9d58c2c346b5cda13ab13f3675}\label{class_keyframe_manager_a2ca51f9d58c2c346b5cda13ab13f3675}} 
+void \hyperlink{class_keyframe_manager_a2ca51f9d58c2c346b5cda13ab13f3675}{Stop} ()
+\begin{DoxyCompactList}\small\item\em Sets the animation state to stopped. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_affb43ea87dcd581a8938238e275cf1bf}\label{class_keyframe_manager_affb43ea87dcd581a8938238e275cf1bf}} 
+void \hyperlink{class_keyframe_manager_affb43ea87dcd581a8938238e275cf1bf}{Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the animation by calling \char`\"{}\+Set\+Current\+Frame\char`\"{} every update frame if the animation state is set to \char`\"{}\+Playing\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_ac94f8f3d7a9c65ee226df806e81d0a90}\label{class_keyframe_manager_ac94f8f3d7a9c65ee226df806e81d0a90}} 
+unsigned int \hyperlink{class_keyframe_manager_ac94f8f3d7a9c65ee226df806e81d0a90}{Get\+Total\+Frames} ()
+\begin{DoxyCompactList}\small\item\em Returns the total frame number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_keyframe_manager_a5aa8a4aba82178223ab869ff3bad0dd3}\label{class_keyframe_manager_a5aa8a4aba82178223ab869ff3bad0dd3}} 
+unsigned int \hyperlink{class_keyframe_manager_a5aa8a4aba82178223ab869ff3bad0dd3}{Get\+Current\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Returns the current frame number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_keyframe_manager_a63db1d456f6f73bfc756583ac9ff6b2b}\label{class_keyframe_manager_a63db1d456f6f73bfc756583ac9ff6b2b}} 
+\hyperlink{class_signal}{Signal}$<$ const flat\+\_\+set$<$ \hyperlink{struct_shape_key_frames}{Shape\+Key\+Frames}, \hyperlink{struct_compare_id}{Compare\+Id} $>$ \&, Frame\+State $>$ \hyperlink{class_keyframe_manager_a63db1d456f6f73bfc756583ac9ff6b2b}{On\+Update}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_signal}{Signal} that gives out the animation data to anything that needs it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages keyframe data for objects Provides functionality to save, load, iterate and interpolate between keyframes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Keyframe\+Manager.\+h\end{DoxyCompactItemize}

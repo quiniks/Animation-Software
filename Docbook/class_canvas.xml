@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_canvas">
+<title>Canvas class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderTexture RendTex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow * m_pWindow</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bMoving</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MouseOffset</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_canvas_1a986afb603e6a8182bef8c45f06494221">Canvas</link> (
+sf::RenderWindow * p_pWindow)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_canvas_1a201413f418eef9b0336772401ec009ee">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_canvas_1a19cd4eba59f4e18830d9ac1be53210ff">Draw</link> (
+const sf::Drawable &amp; p_Drawable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_canvas_1a6fa937d64a95ad0b4510c3227e3bed3d">Clear</link> (
+const sf::Color &amp; color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_canvas_1afc0c7c0669202f0c41fa17ecd81abb1f">Display</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_canvas_1a2c0019f93d948b0b0cd69d01862192b8">HandleMouseInput</link> (
+sf::Mouse::Button p_Button, bool p_bState)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderTexture * <link linkend="class_canvas_1ab5e67ca2616e2ac672082a0628dc1c36">RendTexPtr</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_canvas_1a986afb603e6a8182bef8c45f06494221">
+                <title>Canvas::Canvas (sf::RenderWindow *p_pWindow)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1a201413f418eef9b0336772401ec009ee">
+                <title>void Canvas::Update ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1a19cd4eba59f4e18830d9ac1be53210ff">
+                <title>void Canvas::Draw (const sf::Drawable &amp;p_Drawable)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1a6fa937d64a95ad0b4510c3227e3bed3d">
+                <title>void Canvas::Clear (const sf::Color &amp;color)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1afc0c7c0669202f0c41fa17ecd81abb1f">
+                <title>void Canvas::Display ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1a2c0019f93d948b0b0cd69d01862192b8">
+                <title>void Canvas::HandleMouseInput (sf::Mouse::Button p_Button, bool p_bState)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_canvas_1ab5e67ca2616e2ac672082a0628dc1c36">
+                <title>sf::RenderTexture * Canvas::RendTexPtr ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

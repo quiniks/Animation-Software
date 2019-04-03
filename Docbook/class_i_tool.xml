@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_i_tool">
+<title>ITool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_i_tool_8h">&lt;ITool.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_MouseCanvasPos<para><emphasis>The mouse position on the canvas.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2i m_MouseWindowPos<para><emphasis>The mouse position on the window.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_Active<para><emphasis>Is the tool active.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_i_tool_1a79901d47b06c21ac66ae4b5dea63a72d">ITool</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Constructor handles the inraction pointer giving it to the constructor of HasInteractionPtrs.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_i_tool_1aaee4d261cdadf0bab515ae3d0ad9fe86">Update</link> (
+float p_DeltaTime)<para><emphasis>Update method.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_i_tool_1a1af006baeba70bb9d2a77655e5f43827">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>Callback for mouse click events.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_i_tool_1a650ec05672cd537ef7fd68f220fa9569">OnMouseMove</link> (
+sf::Vector2i p_MouseWindowPos, sf::Vector2f p_MouseCanvasPos)<para><emphasis>callback for mouse move events</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_i_tool_1aa48cc732ed27ccbbaf4731aee956e959">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>draw method</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>handles generic methods that tools might need to use </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_i_tool_1a79901d47b06c21ac66ae4b5dea63a72d">
+                <title>ITool::ITool (InteractionPtrs *p_pSP)</title> <emphasis>Constructor handles the inraction pointer giving it to the constructor of HasInteractionPtrs.</emphasis>
+                
+            </section>
+            <section xml:id="class_i_tool_1aaee4d261cdadf0bab515ae3d0ad9fe86">
+                <title>virtual void ITool::Update (float p_DeltaTime)=0</title> <emphasis>Update method.</emphasis>
+                
+            </section>
+            <section xml:id="class_i_tool_1a1af006baeba70bb9d2a77655e5f43827">
+                <title>virtual void ITool::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState)</title> <emphasis>Callback for mouse click events.</emphasis>
+                
+            </section>
+            <section xml:id="class_i_tool_1a650ec05672cd537ef7fd68f220fa9569">
+                <title>virtual void ITool::OnMouseMove (sf::Vector2i p_MouseWindowPos, sf::Vector2f p_MouseCanvasPos)</title> <emphasis>callback for mouse move events</emphasis>
+                
+            </section>
+            <section xml:id="class_i_tool_1aa48cc732ed27ccbbaf4731aee956e959">
+                <title>virtual void ITool::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>draw method</emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interpolation_helper_8cpp">
+    <title>InterpolationHelper.cpp File Reference</title>
+    <programlisting>#include &quot;InterpolationHelper.h&quot;</programlisting>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/InterpolationHelper.cpp</para>
+    </simplesect>
+</section>

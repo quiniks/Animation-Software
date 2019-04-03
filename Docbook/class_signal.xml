@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_signal">
+<title>Signal class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_signal_8h">&lt;Signal.h&gt;</link></programlisting>
+</para>
+    <templateparamlist>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_ID<para><emphasis>The ID of the signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; int, FUNC_PTR &gt; m_Listeners<para><emphasis>The map of IDs and callback function pointers.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_signal_1a3437b8fd65f60a38d45d4d92349dd544">Signal</link> (
+)<para><emphasis>Constructor sets the ID to 0.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_signal_1a249b93a84b73e8bda0373f6595e6724f">Signal</link> (
+<link linkend="class_signal">Signal</link> const &amp; p_Signal)<para><emphasis>Copy constructor makes sure the ID is still 0.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_signal_1a3ddf10ab607a60af919faa9494836e9e">Connect</link> (
+FUNC_PTR const &amp; p_Listener)<para><emphasis>Connection method takes a std::functional function pointer and emplaces it to the map.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_signal_1a7fe765fc1c513307fd7ae28f0f907f0d">Disconnect</link> (
+int p_ID)<para><emphasis>Disconnect method erases a callback with ID p_ID.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_signal_1a84a53c35c242b67e1e6fbb3d1545eed8">DisconectAll</link> (
+)<para><emphasis>Disconnect all callback functions.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_signal_1a3e5a119b3f1946bdd722518039d4f36d">Notify</link> (
+Args... p_Args)<para><emphasis>Calls and passes the given arguments to all callback functions.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_signal">Signal</link> &amp; <link linkend="class_signal_1ae06f307f87638c3d59a8453bf9031fec">operator=</link> (
+<link linkend="class_signal">Signal</link> const &amp; p_Signal)<para><emphasis>Overloaded assignment operator disconnects all callbacks.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the connections of call back functions. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_signal_1a3437b8fd65f60a38d45d4d92349dd544">
+                <title>Signal&lt; Args &gt;::Signal ()</title> <emphasis>Constructor sets the ID to 0.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1a249b93a84b73e8bda0373f6595e6724f">
+                <title>Signal&lt; Args &gt;::Signal (Signal const &amp;p_Signal)</title> <emphasis>Copy constructor makes sure the ID is still 0.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1a3ddf10ab607a60af919faa9494836e9e">
+                <title>int Signal&lt; Args &gt;::Connect (FUNC_PTR const &amp;p_Listener) const</title> <emphasis>Connection method takes a std::functional function pointer and emplaces it to the map.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1a7fe765fc1c513307fd7ae28f0f907f0d">
+                <title>void Signal&lt; Args &gt;::Disconnect (int p_ID) const</title> <emphasis>Disconnect method erases a callback with ID p_ID.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1a84a53c35c242b67e1e6fbb3d1545eed8">
+                <title>void Signal&lt; Args &gt;::DisconectAll () const</title> <emphasis>Disconnect all callback functions.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1a3e5a119b3f1946bdd722518039d4f36d">
+                <title>void Signal&lt; Args &gt;::Notify (Args... p_Args)</title> <emphasis>Calls and passes the given arguments to all callback functions.</emphasis>
+                
+            </section>
+            <section xml:id="class_signal_1ae06f307f87638c3d59a8453bf9031fec">
+                <title>Signal&amp; Signal&lt; Args &gt;::operator= (Signal const &amp;p_Signal)</title> <emphasis>Overloaded assignment operator disconnects all callbacks.</emphasis>
+                
+            </section>
+</section>

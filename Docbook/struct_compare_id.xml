@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_compare_id">
+<title>CompareId struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_anim_structs_8h">&lt;AnimStructs.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef void  <link linkend="struct_compare_id_1a7dd0fa1db14a369c56c98ec8339ecf07">is_transparent</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_id_1a0508f38a87a7e0e225bf9212eba2cd10">operator()</link> (
+const <link linkend="struct_shape_key_frames">ShapeKeyFrames</link> &amp; p_A, const <link linkend="struct_shape_key_frames">ShapeKeyFrames</link> &amp; p_B)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_id_1aec862adedfa044927c723dc90e9950ef">operator()</link> (
+unsigned int p_ID, const <link linkend="struct_shape_key_frames">ShapeKeyFrames</link> &amp; p_ShapeKeyFrames)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_compare_id_1a8278695c08e3c32f83db065a124f74ea">operator()</link> (
+const <link linkend="struct_shape_key_frames">ShapeKeyFrames</link> &amp; p_ShapeKeyFrames, unsigned int p_ID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Comparator that orders <link linkend="struct_shape_key_frames">ShapeKeyFrames</link> by their ID. </para>
+    </simplesect>
+            <section xml:id="struct_compare_id_1a7dd0fa1db14a369c56c98ec8339ecf07">
+                <title>using CompareId::is_transparent =  void</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_id_1a0508f38a87a7e0e225bf9212eba2cd10">
+                <title>bool CompareId::operator() (const ShapeKeyFrames &amp;p_A, const ShapeKeyFrames &amp;p_B) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_id_1aec862adedfa044927c723dc90e9950ef">
+                <title>bool CompareId::operator() (unsigned int p_ID, const ShapeKeyFrames &amp;p_ShapeKeyFrames) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_compare_id_1a8278695c08e3c32f83db065a124f74ea">
+                <title>bool CompareId::operator() (const ShapeKeyFrames &amp;p_ShapeKeyFrames, unsigned int p_ID) const</title> <emphasis></emphasis>
+                
+            </section>
+</section>

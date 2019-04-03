@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_s_f_m_l_input_handler">
+<title>SFMLInputHandler class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_input_handler_8h">&lt;InputHandler.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; sf::Vector2i &gt; m_MouseMove<para><emphasis>Signal for mouse movement.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; sf::Vector2i, sf::Vector2f &gt; m_MouseMoveExtra<para><emphasis>Signal for mouse movement that sends window and canvas position.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; bool &gt; m_LMB<para><emphasis>Signal for left mouse button states.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; sf::Mouse::Button, bool &gt; m_MouseButton<para><emphasis>Generic signal for all changes in mouse button states.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; float &gt; m_MouseWheel<para><emphasis>Signal for changes in the mouse wheel.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_s_f_m_l_input_handler_1a9e66d308027154e6716957e35b5ec2eb">SFMLInputHandler</link> (
+)<para><emphasis>Constructor that registers all the signals with the event handler.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_s_f_m_l_input_handler_1ae57aa5ce6009abe49a0dd12f3b27e5fd">HandleInputs</link> (
+sf::RenderWindow &amp; p_Window, sf::View &amp; p_View)<para><emphasis>Handle inputs function (called in the main loop)</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Class that manages SFML&apos;s input events and notifies thier corresponding signals. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_s_f_m_l_input_handler_1a9e66d308027154e6716957e35b5ec2eb">
+                <title>SFMLInputHandler::SFMLInputHandler ()</title> <emphasis>Constructor that registers all the signals with the event handler.</emphasis>
+                
+            </section>
+            <section xml:id="class_s_f_m_l_input_handler_1ae57aa5ce6009abe49a0dd12f3b27e5fd">
+                <title>void SFMLInputHandler::HandleInputs (sf::RenderWindow &amp;p_Window, sf::View &amp;p_View)</title> <emphasis>Handle inputs function (called in the main loop)</emphasis>
+                
+            </section>
+</section>

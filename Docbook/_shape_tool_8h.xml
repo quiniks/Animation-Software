@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_shape_tool_8h">
+    <title>ShapeTool.h File Reference</title>
+    <programlisting>#include &lt;SFML/Graphics.hpp&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;Canvas.h&gt;</programlisting>
+    <programlisting>#include &quot;ITool.h&quot;</programlisting>
+    <programlisting>#include &lt;Enums.h&gt;</programlisting>
+    <programlisting>#include &lt;EllipseShape.h&gt;</programlisting>
+    <programlisting>#include &quot;Signal.h&quot;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_shape_tool">ShapeTool</link></para>
+<para><emphasis>Handles the drawing and creation of a shape.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/ShapeTool.h</para>
+    </simplesect>
+</section>

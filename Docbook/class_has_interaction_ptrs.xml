@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_has_interaction_ptrs">
+<title>HasInteractionPtrs class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_interaction_ptrs_8h">&lt;InteractionPtrs.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InteractionPtrs * m_pIP<para><emphasis>Interaction pointers pointer.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_has_interaction_ptrs_1a44e282717a0bf39994df55b5153874a4">HasInteractionPtrs</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>constructor</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_has_interaction_ptrs_1a899e437486cacab5fbaa3cde6af80356">setSubsystemPointers</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Setter for m_pIP.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="struct_interaction_ptrs">InteractionPtrs</link> * <link linkend="class_has_interaction_ptrs_1a2bc6b1bc6112768fbcc5c6b83c2857a3">getSubsystemPointers</link> (
+)<para><emphasis>Returns the interaction pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; <link linkend="class_object">Object</link> * &gt; * <link linkend="class_has_interaction_ptrs_1ad7bb97d4ee16b015374108b6514fd02b">getObjects</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_shapes">Shapes</link> * <link linkend="class_has_interaction_ptrs_1a5efae28f7a0dbbaaea8e728ef5e44fcd">getShapes</link> (
+)<para><emphasis>Returns a pointer to the shapes container.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow * <link linkend="class_has_interaction_ptrs_1ab78f0b1500beb0da994b8895831ea366">getWindow</link> (
+)<para><emphasis>Returns a pointer to the window.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_camera">Camera</link> * <link linkend="class_has_interaction_ptrs_1aacd3f410a05c5e6a15cfb18a901eac5c">getCamera</link> (
+)<para><emphasis>Returns a pointer to the camera.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>inherited by classes that need to used the interaction pointers </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_has_interaction_ptrs_1a44e282717a0bf39994df55b5153874a4">
+                <title>HasInteractionPtrs::HasInteractionPtrs (InteractionPtrs *p_pSP)</title> <emphasis>constructor</emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1a899e437486cacab5fbaa3cde6af80356">
+                <title>void HasInteractionPtrs::setSubsystemPointers (InteractionPtrs *p_pSP)</title> <emphasis>Setter for m_pIP.</emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1a2bc6b1bc6112768fbcc5c6b83c2857a3">
+                <title>InteractionPtrs* HasInteractionPtrs::getSubsystemPointers ()</title> <emphasis>Returns the interaction pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1ad7bb97d4ee16b015374108b6514fd02b">
+                <title>std::vector&lt;Object*&gt;* HasInteractionPtrs::getObjects ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1a5efae28f7a0dbbaaea8e728ef5e44fcd">
+                <title>Shapes* HasInteractionPtrs::getShapes ()</title> <emphasis>Returns a pointer to the shapes container.</emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1ab78f0b1500beb0da994b8895831ea366">
+                <title>sf::RenderWindow* HasInteractionPtrs::getWindow ()</title> <emphasis>Returns a pointer to the window.</emphasis>
+                
+            </section>
+            <section xml:id="class_has_interaction_ptrs_1aacd3f410a05c5e6a15cfb18a901eac5c">
+                <title>Camera* HasInteractionPtrs::getCamera ()</title> <emphasis>Returns a pointer to the camera.</emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_anim_structs_8h">
+    <title>AnimStructs.h File Reference</title>
+    <programlisting>#include &quot;ObjectData.h&quot;</programlisting>
+    <programlisting>#include &lt;boost/container/flat_set.hpp&gt;</programlisting>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_adj_key_frame_data">AdjKeyFrameData</link></para>
+<para><emphasis>Struct that holds adjacent keyframe data.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_key_frame">KeyFrame</link></para>
+<para><emphasis>Struct that holds frame number and its corresponding object data.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_compare_frame">CompareFrame</link></para>
+<para><emphasis>Comparator that orders frames via a the frame number.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_shape_key_frames">ShapeKeyFrames</link></para>
+<para><emphasis>Struct that holds the ID and corresponding keyframes.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="struct_compare_id">CompareId</link></para>
+<para><emphasis>Comparator that orders ShapeKeyFrames by their ID.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespaceboost_1_1container">boost::container</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file D:/Sam/DMU/Year 3/IMAT3451 - Final/Animation project repo/Animation Tool/Animation Project/include/AnimStructs.h</para>
+    </simplesect>
+</section>

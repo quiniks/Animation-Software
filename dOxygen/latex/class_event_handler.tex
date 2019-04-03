@@ -1,0 +1,43 @@
+\hypertarget{class_event_handler}{}\section{Event\+Handler Class Reference}
+\label{class_event_handler}\index{Event\+Handler@{Event\+Handler}}
+
+
+Handles the connecting and registering of signals.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Handler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_event_handler_a5d7ff24c664f9d1c00a417e9716471cc}\label{class_event_handler_a5d7ff24c664f9d1c00a417e9716471cc}} 
+\hyperlink{class_event_handler_a5d7ff24c664f9d1c00a417e9716471cc}{Event\+Handler} (\hyperlink{class_event_handler}{Event\+Handler} const \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_handler_acf2df364aed9018b3f1b6c30f2e37654}\label{class_event_handler_acf2df364aed9018b3f1b6c30f2e37654}} 
+\hyperlink{class_event_handler}{Event\+Handler} \& \hyperlink{class_event_handler_acf2df364aed9018b3f1b6c30f2e37654}{operator=} (\hyperlink{class_event_handler}{Event\+Handler} const \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_handler_a6835697a012c284ca8ca9c32f26b8463}\label{class_event_handler_a6835697a012c284ca8ca9c32f26b8463}} 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{class_event_handler_a6835697a012c284ca8ca9c32f26b8463}{Register2} (std\+::string p\+\_\+\+Signal\+Name, \hyperlink{class_signal}{Signal}$<$ Args... $>$ $\ast$p\+\_\+\+Signal)
+\begin{DoxyCompactList}\small\item\em Template function that can take any type of signal pointer and inserts it in the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_handler_a53fc1f2852e49aedb4cfe766bbc80b6f}\label{class_event_handler_a53fc1f2852e49aedb4cfe766bbc80b6f}} 
+{\footnotesize template$<$typename... Args$>$ }\\int \hyperlink{class_event_handler_a53fc1f2852e49aedb4cfe766bbc80b6f}{Connect2} (std\+::string p\+\_\+\+Signal\+Name, std\+::function$<$ void(Args...)$>$ const \&p\+\_\+\+Listener)
+\begin{DoxyCompactList}\small\item\em Template function that can take any type of function pointer and connects it to a signal with an associated name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_handler_a76ee03c87cfebc9f2bdb4d15a1d3d3b6}\label{class_event_handler_a76ee03c87cfebc9f2bdb4d15a1d3d3b6}} 
+void \hyperlink{class_event_handler_a76ee03c87cfebc9f2bdb4d15a1d3d3b6}{Disconnect} (std\+::string p\+\_\+\+Signal\+Name, unsigned int p\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Disconnect function that disconnects a callback function with ID, p\+\_\+\+ID, from a specified signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_event_handler_ace8f196c90d62a0c22a07845fc6e8ff0}\label{class_event_handler_ace8f196c90d62a0c22a07845fc6e8ff0}} 
+static \hyperlink{class_event_handler}{Event\+Handler} \& {\bfseries Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles the connecting and registering of signals. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Event\+Handler.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{class_colour_tool}{}\section{Colour\+Tool Class Reference}
+\label{class_colour_tool}\index{Colour\+Tool@{Colour\+Tool}}
+
+
+Used as a simple temporary means to recolour shapes.  
+
+
+
+
+{\ttfamily \#include $<$Colour\+Tool.\+h$>$}
+
+Inheritance diagram for Colour\+Tool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_colour_tool}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_colour_tool_aaedac79d91816998884ea165f1b58da0}\label{class_colour_tool_aaedac79d91816998884ea165f1b58da0}} 
+\hyperlink{class_colour_tool_aaedac79d91816998884ea165f1b58da0}{Colour\+Tool} (\hyperlink{struct_interaction_ptrs}{Interaction\+Ptrs} $\ast$p\+\_\+p\+SP)
+\begin{DoxyCompactList}\small\item\em constructor that takes interaction\+Ptrs that contains useful classes needed to recolour shapes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_colour_tool_a8f6f08e54a1e074740aee812bbe54db0}\label{class_colour_tool_a8f6f08e54a1e074740aee812bbe54db0}} 
+void \hyperlink{class_colour_tool_a8f6f08e54a1e074740aee812bbe54db0}{Update} (float p\+\_\+\+Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Update method. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_colour_tool_a2a499beddabdf11b1d982c68174df8ad}\label{class_colour_tool_a2a499beddabdf11b1d982c68174df8ad}} 
+void \hyperlink{class_colour_tool_a2a499beddabdf11b1d982c68174df8ad}{On\+Mouse\+Click} (sf\+::\+Mouse\+::\+Button p\+\_\+\+Button, bool p\+\_\+b\+State) override
+\begin{DoxyCompactList}\small\item\em Callback method that is notified on a mouse button event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_colour_tool_a02ad228f089cf99ba9f56b66f18de24b}\label{class_colour_tool_a02ad228f089cf99ba9f56b66f18de24b}} 
+void \hyperlink{class_colour_tool_a02ad228f089cf99ba9f56b66f18de24b}{On\+Mouse\+Move} (sf\+::\+Vector2i p\+\_\+\+Mouse\+Window\+Pos, sf\+::\+Vector2f p\+\_\+\+Mouse\+World\+Pos) override
+\begin{DoxyCompactList}\small\item\em Callback method that is notified on a mouse move extra event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_colour_tool_a60f7a883b45ab06a0461988fa48e38d5}\label{class_colour_tool_a60f7a883b45ab06a0461988fa48e38d5}} 
+void \hyperlink{class_colour_tool_a60f7a883b45ab06a0461988fa48e38d5}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em draw method that draws the colour panel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Used as a simple temporary means to recolour shapes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Sam/\+D\+M\+U/\+Year 3/\+I\+M\+A\+T3451 -\/ Final/\+Animation project repo/\+Animation Tool/\+Animation Project/include/Colour\+Tool.\+h\end{DoxyCompactItemize}

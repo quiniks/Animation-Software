@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_interaction_ptrs">
+<title>InteractionPtrs struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="_interaction_ptrs_8h">&lt;InteractionPtrs.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Object * &gt; * m_pObjects</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Shapes * m_Shapes<para><emphasis>shapes container used to create and interact with shapes</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RenderWindow * m_pWindow<para><emphasis>pointer to the window</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Camera * m_pCamera<para><emphasis>pointer to the camera view</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="struct_interaction_ptrs_1a508c3b51f098bdf4aee1379ecf4d0c6f">InteractionPtrs</link> (
+std::vector&lt; <link linkend="class_object">Object</link> *&gt; * p_pObjects, <link linkend="class_shapes">Shapes</link> * p_Shapes, sf::RenderWindow * p_pWindow, <link linkend="class_camera">Camera</link> * p_pCamera)<para><emphasis>interaction pointers constructor</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Interaction pointers struct. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="struct_interaction_ptrs_1a508c3b51f098bdf4aee1379ecf4d0c6f">
+                <title>InteractionPtrs::InteractionPtrs (std::vector&lt; Object *&gt; *p_pObjects, Shapes *p_Shapes, sf::RenderWindow *p_pWindow, Camera *p_pCamera)</title> <emphasis>interaction pointers constructor</emphasis>
+                
+            </section>
+</section>

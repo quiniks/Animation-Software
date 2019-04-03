@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_joint_tool">
+<title>JointTool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_joint_tool_8h">&lt;JointTool.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bSelecting<para><emphasis>Is a joint waiting for a selection to be made.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Object * m_ParentObject<para><emphasis>Pointer to the parent object.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Object * m_ChildObject<para><emphasis>Pointer to the child object.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::VertexArray m_Line<para><emphasis>Visual line for when a joint is being made.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2i <link linkend="class_joint_tool_1a4deb4f2c323ed62e709731d6a0d2866f">ToWindow</link> (
+sf::Vector2f p_Pos)<para><emphasis>Conversion function for the mouse position.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_joint_tool_1a023c782f823a670bc230a437eff95a6d">JointTool</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_joint_tool_1a4b8459d9517f143f06e391c2e679bfb9">~JointTool</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_joint_tool_1ac00895518431be66662033b126ae6427">Update</link> (
+float p_DeltaTime)<para><emphasis>Updates the joint line during a selection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_joint_tool_1a1d67646dea85f21555baa3dffc884876">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>callback for mouse click events used to determine the parent and child of a joint</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_joint_tool_1afc73a29a1c72a5e58da7d8f2cc6d43b4">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)<para><emphasis>Draw the joint line.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the linking joints between objest. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_joint_tool_1a4deb4f2c323ed62e709731d6a0d2866f">
+                <title>sf::Vector2i JointTool::ToWindow (sf::Vector2f p_Pos)</title> <emphasis>Conversion function for the mouse position.</emphasis>
+                
+            </section>
+            <section xml:id="class_joint_tool_1a023c782f823a670bc230a437eff95a6d">
+                <title>JointTool::JointTool (InteractionPtrs *p_pSP)</title> <emphasis>Constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_joint_tool_1a4b8459d9517f143f06e391c2e679bfb9">
+                <title>JointTool::~JointTool ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_joint_tool_1ac00895518431be66662033b126ae6427">
+                <title>void JointTool::Update (float p_DeltaTime) override</title> <emphasis>Updates the joint line during a selection.</emphasis>
+                
+            </section>
+            <section xml:id="class_joint_tool_1a1d67646dea85f21555baa3dffc884876">
+                <title>void JointTool::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState) override</title> <emphasis>callback for mouse click events used to determine the parent and child of a joint</emphasis>
+                
+            </section>
+            <section xml:id="class_joint_tool_1afc73a29a1c72a5e58da7d8f2cc6d43b4">
+                <title>void JointTool::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis>Draw the joint line.</emphasis>
+                
+            </section>
+</section>

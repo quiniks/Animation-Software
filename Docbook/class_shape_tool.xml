@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_shape_tool">
+<title>ShapeTool class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_shape_tool_8h">&lt;ShapeTool.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_bDrawing<para><emphasis>Is a shape currently being drawn.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Vector2f m_StartPos<para><emphasis>the position of the mouse when beginning to draw the shape</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ShapeType m_eMode<para><emphasis>the type of shape being drawn</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Object * m_ShapeBeingDrawn<para><emphasis>a pointer to the shape being drawn</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_IDBeingDrawn<para><emphasis>the ID of the shape being drawn</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; unsigned int &gt; OnDrawEnd<para><emphasis>signal to notify callback functions when a shape has finished being drawn</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_shape_tool_1a2d31f92499677b36c002b26af0bcd147">ShapeTool</link> (
+<link linkend="struct_interaction_ptrs">InteractionPtrs</link> * p_pSP)<para><emphasis>Constructor that takes the interactionPtrs that contain useful classes for the creation of new shapes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_shape_tool_1a098c92b3a500ab0626c73e078dbdbddc">Update</link> (
+float p_DeltaTime)<para><emphasis>update method used to visually update the shape benig drawn</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_shape_tool_1a96dbd9eb07a88d3855d5f2fbd71f5474">OnMouseClick</link> (
+sf::Mouse::Button p_Button, bool p_bState)<para><emphasis>callback that is called on the mouse being clicked</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Handles the drawing and creation of a shape. </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_shape_tool_1a2d31f92499677b36c002b26af0bcd147">
+                <title>ShapeTool::ShapeTool (InteractionPtrs *p_pSP)</title> <emphasis>Constructor that takes the interactionPtrs that contain useful classes for the creation of new shapes.</emphasis>
+                
+            </section>
+            <section xml:id="class_shape_tool_1a098c92b3a500ab0626c73e078dbdbddc">
+                <title>void ShapeTool::Update (float p_DeltaTime) override</title> <emphasis>update method used to visually update the shape benig drawn</emphasis>
+                
+            </section>
+            <section xml:id="class_shape_tool_1a96dbd9eb07a88d3855d5f2fbd71f5474">
+                <title>void ShapeTool::OnMouseClick (sf::Mouse::Button p_Button, bool p_bState) override</title> <emphasis>callback that is called on the mouse being clicked</emphasis>
+                
+            </section>
+</section>

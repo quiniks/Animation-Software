@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_time_line_viewer">
+<title>TimeLineViewer class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_VisibleFrames</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>unsigned int m_TotalFrames</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture * m_TimeLineBgTex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_TimeLineBg</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::Texture * m_TimeLineTex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_TimeLineFrame</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_CurrentFrameSlider</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_SliderBar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>sf::RectangleShape m_SliderHandle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverSliderHandle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverCurrentSlider</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsOverSliderBar</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsHandleActive</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_IsCurrentSliderActive</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_Offset</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_InitialMouseX</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Signal&lt; unsigned int &gt; FrameSliderMoved</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_FrameWidth</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_time_line_viewer_1a9a411e81c5399f73d383b9166e113f26">TimeLineViewer</link> (
+sf::Vector2f p_Pos, sf::Vector2f p_Size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_viewer_1a408245f35ad6afe20ab06f0affe95c90">SetTotalFrames</link> (
+unsigned int p_NumberOfFrames)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_viewer_1a99c49e442d49585fcec4f17361a54b02">OnMouseClick</link> (
+bool p_State)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_viewer_1a1dbe935d865141b276abf3202b77c4c2">OnMouseMove</link> (
+sf::Vector2i p_Pos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_viewer_1a3bcb578ec9bdddfe98d9bb367bcc11e8">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_time_line_viewer_1a9d9fbe5a0080fa3207a65cc58c0c5267">draw</link> (
+sf::RenderTarget &amp; target, sf::RenderStates states)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_time_line_viewer_1a9a411e81c5399f73d383b9166e113f26">
+                <title>TimeLineViewer::TimeLineViewer (sf::Vector2f p_Pos, sf::Vector2f p_Size)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_viewer_1a408245f35ad6afe20ab06f0affe95c90">
+                <title>void TimeLineViewer::SetTotalFrames (unsigned int p_NumberOfFrames)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_viewer_1a99c49e442d49585fcec4f17361a54b02">
+                <title>void TimeLineViewer::OnMouseClick (bool p_State)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_viewer_1a1dbe935d865141b276abf3202b77c4c2">
+                <title>void TimeLineViewer::OnMouseMove (sf::Vector2i p_Pos)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_viewer_1a3bcb578ec9bdddfe98d9bb367bcc11e8">
+                <title>void TimeLineViewer::Update ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_time_line_viewer_1a9d9fbe5a0080fa3207a65cc58c0c5267">
+                <title>void TimeLineViewer::draw (sf::RenderTarget &amp;target, sf::RenderStates states) const</title> <emphasis></emphasis>
+                
+            </section>
+</section>
