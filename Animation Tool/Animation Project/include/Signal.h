@@ -47,7 +47,7 @@ public:
 		this->DisconnectAll();
 	};
 };
-/*
+
 class Signal2 {
 private:
 	mutable int m_ID;
@@ -113,6 +113,3 @@ class AbstractDelegate {
 public:
 	virtual void Call(Args... p_Args) = 0;
 };
-
-
-*/

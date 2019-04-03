@@ -12,7 +12,7 @@
  */
 class EventHandler {
 private:
-	//std::map<std::string, Signal2*> m_EventMap;
+	std::map<std::string, Signal2*> m_EventMap;
 	//! Map used to hold pointers to signals
 	//! Since signals are template classes std::any is used to store them
 	std::map<std::string, std::any> m_EventMap2;
@@ -23,8 +23,8 @@ public:
 	static EventHandler &Instance();
 	EventHandler(EventHandler const&) = delete; //!< Copy operator.
 	EventHandler& operator= (EventHandler const&) = delete; //!< Assignment operator. 
-	//void Register(std::string p_SignalName, Signal2* p_Signal);
-	//void Connect(std::string p_SignalName, std::function<void(std::vector<std::any>)> p_Listener);
+	void Register(std::string p_SignalName, Signal2* p_Signal);
+	void Connect(std::string p_SignalName, std::function<void(std::vector<std::any>)> p_Listener);
 
 	//! Template function that can take any type of signal pointer and inserts it in the map
 	template<typename... Args>

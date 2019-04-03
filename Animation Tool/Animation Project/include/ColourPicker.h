@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-/*
+
 class ColourPicker {
 private:
 	sf::Color m_Colour;
@@ -16,4 +16,3 @@ private:
 public:
 	ColourPicker(sf::Vector2f p_Pos);
 };
-*/
