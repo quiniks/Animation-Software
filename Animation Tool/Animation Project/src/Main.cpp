@@ -125,12 +125,13 @@ int main() {
 		window.draw(canvas);
 		//Handle screen rendering
 		window.setView(window.getDefaultView());
-		window.draw(toolBox);
+		
 		//window.draw(colourPanel);
 		window.draw(buttonBar);
 		//timeLineViewer.Update();
 		//window.draw(timeLineViewer);
 		window.draw(m_TimeLine);
+		window.draw(toolBox);
 		for (Button& button : buttons) {
 			window.draw(button);
 		}
