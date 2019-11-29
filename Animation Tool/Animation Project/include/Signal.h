@@ -6,7 +6,7 @@
 #include <any>
 
 #define FUNC_PTR std::function<void(Args...)>
-#define FUNC_PTR_ANY std::function<void(std::vector<std::any>)>
+//#define FUNC_PTR_ANY std::function<void(std::vector<std::any>)>
 /**
  * @class Signal
  * @brief Handles the connections of call back functions
@@ -47,7 +47,7 @@ public:
 		this->DisconnectAll();
 	};
 };
-
+/*
 class Signal2 {
 private:
 	mutable int m_ID;
@@ -112,4 +112,4 @@ template <typename ...Args>
 class AbstractDelegate {
 public:
 	virtual void Call(Args... p_Args) = 0;
-};
+};*/
